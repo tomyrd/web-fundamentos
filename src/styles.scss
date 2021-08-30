@@ -1,0 +1,39 @@
+body {
+    font-family: "Catamaran", sans-serif !important;
+}
+
+.panel-tabs {
+    font-size: 1em;
+}
+
+article {
+    background-color: #ffffff;
+}
+
+.figure {
+    position: relative;
+    max-width: 100%;
+}
+
+.figure img.image-main {
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    object-fit: cover;
+}
+
+.figure img.image-hover {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity .2s;
+}
+
+.figure:hover img.image-hover {
+    opacity: 1;
+}

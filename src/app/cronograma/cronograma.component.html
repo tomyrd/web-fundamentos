@@ -1,0 +1,27 @@
+<section class="section" id="cronograma">
+    <p class="title">Cronograma</p>
+    <table class="table is-fullwidth">
+        <thead>
+            <tr>
+                <th>Semana</th>
+                <th>Temas</th>
+                <th>Hitos</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let semana of cronograma" [ngClass]="{'is-selected': fecha >= semana.fechaInicio && fecha < semana.fechaFin }">
+                <td>{{ semana.numero }}</td>
+                <td>
+                    <ul>
+                        <li *ngFor="let tema of semana.temas">{{ tema }}</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li *ngFor="let hito of semana.hitos">{{ hito }}</li>
+                    </ul>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>

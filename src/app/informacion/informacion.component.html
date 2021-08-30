@@ -1,0 +1,55 @@
+<section class="section" id="info">
+    <p class="title">Info</p>
+    <div class="content">
+        En esta página encontrarán todo el material correspondiente a la materia 75.40 y 95.14 - Algoritmos y Programación I. 
+    </div>
+    <div class="columns">
+        <div class="column is-one-third">
+            <div class="card" style="height: 100%;">
+                <div class="card-content">
+                    <div class="content">
+                        <h5>Régimen de cursada</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="column is-one-third">
+            <div class="card" style="height: 100%;">
+                <div class="card-content">
+                    <div class="content">
+                        <h5>Horarios</h5>
+                    </div>
+                    <table class="table m-auto has-text-centered">
+                        <tbody>
+                            <tr *ngFor="let horario of horarios">
+                                <td>{{ horario.tipo }}</td>
+                                <td>{{ horario.dia }} de {{ horario.hora }}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="column is-one-third">
+            <div class="card" style="height: 100%;">
+                <div class="card-content">
+                    <div class="content">
+                        <h5>Encuestas</h5>
+                    </div>
+                    <div class="field has-addons">
+                        <div class="control is-expanded">
+                            <div class="select is-fullwidth">
+                                <select name="country" [(ngModel)]="selectedSurvey">
+                                    <option *ngFor="let encuesta of encuestas" [ngValue]="encuesta.url">{{ encuesta.nombre }}</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="control">
+                            <a type="submit" href="{{ selectedSurvey }}" target="_blank" class="button is-primary">Ver</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

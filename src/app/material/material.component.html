@@ -1,0 +1,57 @@
+<section class="section" id="material">
+    <h1 class="title">Material</h1>
+    <div class="columns">
+        <div class="column is-half">
+            <article class="panel is-info">
+                <p class="panel-heading">Apuntes</p>
+                <div class="panel-block">
+                    <p class="control has-icons-left">
+                        <input class="input" type="text" placeholder="Buscar" [(ngModel)]="apuntesSearch" (ngModelChange)="filtrarApuntes(apuntesSearch)">
+                        <span class="icon is-left">
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                        </span>
+                    </p>
+                </div>
+                <div class="pb-5">
+                    <div style="height: 22.5rem; overflow-y: scroll;">
+                        <a class="panel-block is-active" *ngFor="let apunte of apuntes" href="{{ apunte.url }}" target="_blank">
+                            <span class="panel-icon">
+                                <i class="fa fa-book" aria-hidden="true"></i>
+                            </span>
+                            {{ apunte.nombre | titlecase }}
+                        </a>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <div class="column is-half">
+            <article class="panel is-danger">
+                <p class="panel-heading">Clases</p>
+                <div class="panel-block">
+                    <p class="control has-icons-left">
+                        <input class="input" type="text" placeholder="Buscar" [(ngModel)]="clasesSearch" (ngModelChange)="filtrarClases(clasesCategory, clasesSearch)">
+                        <span class="icon is-left">
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                        </span>
+                    </p>
+                </div>
+                <p class="panel-tabs">
+                    <a (click)="changeCategory('')" [ngClass]="{'is-active': clasesCategory === ''}">Todas</a>
+                    <a (click)="changeCategory('teorica')" [ngClass]="{'is-active': clasesCategory === 'teorica'}">Teóricas</a>
+                    <a (click)="changeCategory('practica')" [ngClass]="{'is-active': clasesCategory === 'practica'}">Prácticas</a>
+                    <a (click)="changeCategory('consultas')" [ngClass]="{'is-active': clasesCategory === 'consultas'}">Consultas</a>
+                </p>
+                <div class="pb-5">
+                    <div style="height: 20rem; overflow-y: scroll;">
+                        <a class="panel-block is-active" *ngFor="let clase of clases" href="{{ clase.url }}" target="_blank">
+                            <span class="panel-icon">
+                                <i class="fa fa-terminal" aria-hidden="true"></i>
+                            </span>
+                            {{ clase.tipo | titlecase }} - {{ clase.nombre | titlecase }}
+                        </a>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>

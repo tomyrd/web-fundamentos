@@ -1,0 +1,16 @@
+<section class="section" id="docentes">
+    <p class="title">Docentes</p>
+    <div class="columns" *ngFor="let docentesRow of docentes">
+        <div class="column is-one-fifth" *ngFor="let docente of docentesRow">
+            <div class="card">
+                <div class="card-image">
+                    <figure class="image is-4by5 figure">
+                        <img class="image-main" src="{{ docente.url1 }}" srcset="{{ docente.url1 }}" alt="Demo image 1">
+                        <img class="image-hover" src="{{ docente.url2 }}" srcset="{{ docente.url2 }}" alt="Demo image 2">
+                    </figure>
+                </div>
+            </div>
+            <h5 class="subtitle is-5 pt-2 has-text-centered">{{ docente.name }}</h5>
+        </div>
+    </div>
+</section>
