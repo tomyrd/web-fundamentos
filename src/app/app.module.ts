@@ -12,6 +12,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { DatePipe } from '@angular/common';
+import { HallOfFameComponent } from './hall-of-fame/hall-of-fame.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { DatePipe } from '@angular/common';
     CronogramaComponent,
     InformacionComponent,
     FooterComponent,
-    NavbarComponent
+    NavbarComponent,
+    HallOfFameComponent
   ],
   imports: [
     BrowserModule,
