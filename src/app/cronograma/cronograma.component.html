@@ -1,27 +1,24 @@
 <section class="section" id="cronograma">
     <p class="title">Cronograma</p>
-    <table class="table is-fullwidth">
-        <thead>
-            <tr>
-                <th>Semana</th>
-                <th>Temas</th>
-                <th>Hitos</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr *ngFor="let semana of cronograma" [ngClass]="{'is-selected': fecha >= semana.fechaInicio && fecha < semana.fechaFin }">
-                <td>{{ semana.numero }}</td>
-                <td>
-                    <ul>
-                        <li *ngFor="let tema of semana.temas">{{ tema }}</li>
-                    </ul>
-                </td>
-                <td>
-                    <ul>
-                        <li *ngFor="let hito of semana.hitos">{{ hito }}</li>
-                    </ul>
-                </td>
-            </tr>
-        </tbody>
-    </table>
+    <div class="content is-normal">
+        <p>Atención: El siguiente cronograma es tentativo y podrá sufrir cambios.</p>
+        <p>Puede descargar la versión en pdf desde <a href="{{ cronogramaURL }}" target="_blank">acá</a></p>
+    </div>
+    <div class="columns">
+        <div class="column is-8 is-offset-2"style="overflow-y: scroll; height: 60rem;">
+            <article [ngClass]="{'message is-info': true, 'active-week': fecha >= semana.fechaInicio && fecha <= semana.fechaFin }" *ngFor="let semana of cronograma">
+                <div class="message-body py-5">
+                    <div class="columns">
+                        <div class="column is-2 has-text-centered">
+                            <h3 class="title is-3">{{ semana.numero }}</h3>
+                        </div>
+                        <div class="column is-8">
+                            <h5 class="title is-5">{{ semana.tema }}</h5>
+                            <span [ngClass]="{'tag is-rounded is-medium mr-2 mb-2 is-info': true }" *ngFor="let hito of semana.hitos">{{ hito }}</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </div>
 </section>
