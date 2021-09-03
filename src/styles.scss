@@ -39,5 +39,32 @@ article {
 }
 
 .active-week {
-    background-color: #d1eaff !important;
+    background-color: #9acef8 !important;
+}
+
+.message.is-blue .message-body {
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 0px;
+    border-left-width: 5px;
+}
+
+.has-text-blue {
+    color: #273885 !important;
+}
+
+.button.is-blue {
+    background-color: #273885;
+    border-color: transparent;
+    color: #fff;
+}
+
+.tag.is-blue {
+    background-color: #273885;
+    border-color: transparent;
+    color: #fff;
+}
+
+.message.is-blue .message-body {
+    border-color: #273885;
+    color: #273885 !important;
 }

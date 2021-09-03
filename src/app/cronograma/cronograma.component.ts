@@ -37,7 +37,7 @@ export class CronogramaComponent implements OnInit {
       {numero: "12", fechaInicio: "20211122", fechaFin: "20211128", tema: "Archivos de texto. Acceso secuencial", hitos: ["Entrega TP Parte 2","Presentación TP Parte 3"]},
       {numero: "13", fechaInicio: "20211129", fechaFin: "20211205", tema: "Archivos de texto. Acceso secuencial", hitos: []},
       {numero: "14", fechaInicio: "20211206", fechaFin: "20211212", tema: "Mesa de debate con otros docentes. Algo1 en otro lenguaje.", hitos: ["Reentrega TP Parte 2","Entrega TP Parte 3"]},
-      {numero: "15", fechaInicio: "20211213", fechaFin: "20211219", tema: "Retrospectiva", hitos: ["1er recuperatorio parcial"]},
+      {numero: "15", fechaInicio: "20211213", fechaFin: "20211219", tema: "Retrospectiva.", hitos: ["1er recuperatorio parcial"]},
       {numero: "16", fechaInicio: "20211220", fechaFin: "20211226", tema: "", hitos: ["Reentrega TP Parte 3"]},
     ];
   }

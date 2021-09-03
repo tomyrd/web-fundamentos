@@ -2,8 +2,8 @@
     <h1 class="title">Material</h1>
     <div class="columns">
         <div class="column is-half">
-            <article class="panel is-info">
-                <p class="panel-heading">Apuntes</p>
+            <article class="panel">
+                <p class="panel-heading has-text-blue has-background-white">Apuntes</p>
                 <div class="panel-block">
                     <p class="control has-icons-left">
                         <input class="input" type="text" placeholder="Buscar" [(ngModel)]="apuntesSearch" (ngModelChange)="filtrarApuntes(apuntesSearch)">
@@ -25,8 +25,8 @@
             </article>
         </div>
         <div class="column is-half">
-            <article class="panel is-info">
-                <p class="panel-heading">Clases</p>
+            <article class="panel">
+                <p class="panel-heading has-text-blue has-background-white">Clases</p>
                 <div class="panel-block">
                     <p class="control has-icons-left">
                         <input class="input" type="text" placeholder="Buscar" [(ngModel)]="clasesSearch" (ngModelChange)="filtrarClases(clasesCategory, clasesSearch)">
