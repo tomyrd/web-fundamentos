@@ -15,7 +15,8 @@ export class HallOfFameComponent implements OnInit {
   ngOnInit(): void {
     this.docentes = _.chunk([
       {name: "Mariano Mendez", url1: "assets/img/docentes/marian1.jpg", url2: "assets/img/docentes/marian2.jpg"},
-      {name: "Charly Talavera", url1: "assets/img/docentes/charly1.jpg", url2: "assets/img/docentes/charly2.jpg"},
+      //{name: "Charly Talavera", url1: "assets/img/docentes/charly1.jpg", url2: "assets/img/docentes/charly2.jpg"},
+      {name: "Tomi", url1: "assets/img/docentes/tomi1.jpg", url2: "assets/img/docentes/tomi2.jpg"},
       {name: "Aníbal Lovaglio", url1: "assets/img/docentes/anibal1.jpg", url2: "assets/img/docentes/anibal2.jpg"},
       {name: "Gabriel Pucci", url1: "assets/img/docentes/puchi1.jpg", url2: "assets/img/docentes/puchi2.jpg"},
       {name: "Fernando Cáceres", url1: "assets/img/docentes/fer1.jpg", url2: "assets/img/docentes/fer2.jpg"},

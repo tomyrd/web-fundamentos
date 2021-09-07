@@ -24,6 +24,8 @@ export class DocentesComponent implements OnInit {
       {name: "Eze", url1: "assets/img/docentes/eze1.jpg", url2: "assets/img/docentes/eze2.jpg"},
       {name: "Fran", url1: "assets/img/docentes/franco1.jpg", url2: "assets/img/docentes/franco2.jpg"},
       {name: "Juli", url1: "assets/img/docentes/juli1.jpg", url2: "assets/img/docentes/juli2.jpg"},
+      {name: "Manu", url1: "assets/img/docentes/manub1.jpg", url2: "assets/img/docentes/manub2.jpg"},
+      {name: "Manu", url1: "assets/img/docentes/manuc1.jpg", url2: "assets/img/docentes/manuc2.jpg"},
       {name: "Mati", url1: "assets/img/docentes/mati1.jpg", url2: "assets/img/docentes/mati2.jpg"},
       {name: "Meli", url1: "assets/img/docentes/meli1.jpg", url2: "assets/img/docentes/meli2.jpg"},
       {name: "Nahu", url1: "assets/img/docentes/nahu1.jpg", url2: "assets/img/docentes/nahu2.jpg"},
@@ -33,7 +35,6 @@ export class DocentesComponent implements OnInit {
       {name: "Santi", url1: "assets/img/docentes/santi1.jpg", url2: "assets/img/docentes/santi2.jpg"},
       {name: "Sofi", url1: "assets/img/docentes/sofi1.jpg", url2: "assets/img/docentes/sofi2.jpg"},
       {name: "Sol", url1: "assets/img/docentes/sol1.jpg", url2: "assets/img/docentes/sol2.jpg"},
-      {name: "Tomi", url1: "assets/img/docentes/tomi1.jpg", url2: "assets/img/docentes/tomi2.jpg"},
       {name: "Valen", url1: "assets/img/docentes/valen1.jpg", url2: "assets/img/docentes/valen2.jpg"},
     ], 5);
   }

@@ -27,7 +27,7 @@ export class CronogramaComponent implements OnInit {
       {numero: "2", fechaInicio: "20210913", fechaFin: "20210919", tema: "Codificación, compilación y ejecución. Estructuras de control.", hitos: []},
       {numero: "3", fechaInicio: "20210920", fechaFin: "20210926", tema: "Funciones y procedimientos. Pasaje de parámetros por valor.", hitos: []},
       {numero: "4", fechaInicio: "20210927", fechaFin: "20211003", tema: "Pasaje de parámetros por referencia. Buenas prácticas de programación.", hitos: []},
-      {numero: "5", fechaInicio: "20210804", fechaFin: "20211010", tema: "Bibliotecas. Strings. Registros.", hitos: ["Presentación TP Parte 1"]},
+      {numero: "5", fechaInicio: "20211004", fechaFin: "20211010", tema: "Bibliotecas. Strings. Registros.", hitos: ["Presentación TP Parte 1"]},
       {numero: "6", fechaInicio: "20211011", fechaFin: "20211017", tema: "Vectores y matrices. Búsqueda lineal.", hitos: []},
       {numero: "7", fechaInicio: "20211018", fechaFin: "20211024", tema: "Eliminación de elementos. Estructuras anidadas.", hitos: []},
       {numero: "8", fechaInicio: "20211025", fechaFin: "20211031", tema: "Métodos de ordenamiento. Inserción ordenada.", hitos: ["Entrega TP Parte 1","Presentación TP Parte 2"]},
