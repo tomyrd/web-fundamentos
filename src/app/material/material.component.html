@@ -1,7 +1,7 @@
 <section class="section" id="material">
     <h1 class="title">Material</h1>
     <div class="columns">
-        <div class="column is-half">
+        <div class="column is-one-third">
             <article class="panel">
                 <p class="panel-heading has-text-blue has-background-white">Apuntes</p>
                 <div class="panel-block">
@@ -24,7 +24,7 @@
                 </div>
             </article>
         </div>
-        <div class="column is-half">
+        <div class="column is-one-third">
             <article class="panel">
                 <p class="panel-heading has-text-blue has-background-white">Clases</p>
                 <div class="panel-block">
@@ -37,8 +37,7 @@
                 </div>
                 <p class="panel-tabs">
                     <a (click)="changeCategory('')" [ngClass]="{'is-active': clasesCategory === ''}">Todas</a>
-                    <a (click)="changeCategory('teorica')" [ngClass]="{'is-active': clasesCategory === 'teorica'}">Teóricas</a>
-                    <a (click)="changeCategory('practica')" [ngClass]="{'is-active': clasesCategory === 'practica'}">Prácticas</a>
+                    <a (click)="changeCategory('clase')" [ngClass]="{'is-active': clasesCategory === 'clases' }">Clases</a>
                     <a (click)="changeCategory('consultas')" [ngClass]="{'is-active': clasesCategory === 'consultas'}">Consultas</a>
                 </p>
                 <div class="pb-5">
@@ -48,6 +47,29 @@
                                 <i class="fa fa-terminal" aria-hidden="true"></i>
                             </span>
                             {{ clase.tipo | titlecase }} - {{ clase.nombre | titlecase }}
+                        </a>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <div class="column is-one-third">
+            <article class="panel">
+                <p class="panel-heading has-text-blue has-background-white">Trabajos Prácticos y Desafíos</p>
+                <div class="panel-block">
+                    <p class="control has-icons-left">
+                        <input class="input" type="text" placeholder="Buscar" [(ngModel)]="tpsSearch" (ngModelChange)="filtrarTps(tpsSearch)">
+                        <span class="icon is-left">
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                        </span>
+                    </p>
+                </div>
+                <div class="pb-5">
+                    <div style="height: 22.5rem; overflow-y: scroll;">
+                        <a class="panel-block is-active" *ngFor="let tp of tps" href="{{ tp.url }}" target="_blank">
+                            <span class="panel-icon">
+                                <i class="fa fa-ghost" aria-hidden="true"></i>
+                            </span>
+                            {{ tp.nombre | titlecase }}
                         </a>
                     </div>
                 </div>
