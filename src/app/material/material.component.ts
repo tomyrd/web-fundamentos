@@ -11,13 +11,16 @@ export class MaterialComponent implements OnInit {
 
   teoricas: any;
 	practicas: any;
+  tps: any;
 	apuntes: any;
   allApuntes: any;
 	allClases: any;
+  allTps: any;
   clases: any;
   clasesSearch: string = "";
   clasesCategory: string = "";
   apuntesSearch: string = "";
+  tpsSearch: string = "";
 
   constructor(
     public restApi: RestApiService
@@ -26,6 +29,7 @@ export class MaterialComponent implements OnInit {
   ngOnInit(): void {
     this.getApuntes();
 		this.getClases();
+    this.getTps();
   }
 
   getApuntes() {
@@ -55,6 +59,19 @@ export class MaterialComponent implements OnInit {
 		});
 	}
 
+  getTps() {
+		this.restApi.getFiles("tps").subscribe((data: any) => {
+      var tps = data;
+			for (var i = 0; i < tps.length; i++) {
+				let nombre = tps[i].name.split("_");
+				tps[i].nombre = `${nombre.slice(0,2).join(" ").split(".")[0]} - ${nombre.slice(2).join(" ").split(".")[0]}`;
+				tps[i].url = this.restApi.getApiUrl() + '/tps/' + tps[i].name;
+			}
+      this.allTps = tps;
+      this.tps = this.allTps;
+		});
+	}
+
   changeCategory(category: string){
     this.clasesCategory = category;
     this.filtrarClases(this.clasesCategory, this.clasesSearch);
@@ -69,6 +86,12 @@ export class MaterialComponent implements OnInit {
   
   filtrarApuntes(search){
     this.apuntes = _.filter(this.allApuntes, function(obj) {
+      return (search.length == 0 || obj.nombre.toLowerCase().indexOf(search.toLowerCase()) !== -1);
+    });
+  }
+
+  filtrarTps(search){
+    this.tps = _.filter(this.allTps, function(obj) {
       return (search.length == 0 || obj.nombre.toLowerCase().indexOf(search.toLowerCase()) !== -1);
     });
   }
