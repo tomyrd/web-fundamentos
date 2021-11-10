@@ -13,6 +13,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { DatePipe } from '@angular/common';
 import { HallOfFameComponent } from './hall-of-fame/hall-of-fame.component';
+import { ExamenesComponent } from './examenes/examenes.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { HallOfFameComponent } from './hall-of-fame/hall-of-fame.component';
     InformacionComponent,
     FooterComponent,
     NavbarComponent,
-    HallOfFameComponent
+    HallOfFameComponent,
+    ExamenesComponent
   ],
   imports: [
     BrowserModule,

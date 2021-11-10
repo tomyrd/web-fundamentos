@@ -1,0 +1,51 @@
+<section class= "section" id= "examenes">
+    <h1 class="title">Exámenes</h1>
+    <div class="columns">
+        <div class="column is-half">
+            <article class="panel">
+                <p class="panel-heading has-text-blue has-background-white">Parciales</p>
+                <div class="panel-block">
+                    <p class="control has-icons-left">
+                        <input class="input" type="text" placeholder="Buscar" [(ngModel)]="parcialesSearch" (ngModelChange)="filtrarParciales(parcialesSearch)">
+                        <span class="icon is-left">
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                        </span>
+                    </p>
+                </div>
+                <div class="pb-5">
+                    <div style="height: 28rem; overflow-y: scroll;">
+                        <a class="panel-block is-active" *ngFor="let parcial of parciales" href="{{ parciales.url }}" target="_blank">
+                            <span class="panel-icon">
+                                <i class="fa fa-terminal" aria-hidden="true"></i>
+                            </span>
+                            {{ parcial.nombre | titlecase }}
+                        </a>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <div class="column is-half">
+            <article class="panel">
+                <p class="panel-heading has-text-blue has-background-white">Finales</p>
+                <div class="panel-block">
+                    <p class="control has-icons-left">
+                        <input class="input" type="text" placeholder="Buscar" [(ngModel)]="finalesSearch" (ngModelChange)="filtrarFinales(finalesSearch)">
+                        <span class="icon is-left">
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                        </span>
+                    </p>
+                </div>
+                <div class="pb-5">
+                    <div style="height: 28rem; overflow-y: scroll;">
+                        <a class="panel-block is-active" *ngFor="let final of finales" href="{{ finales.url }}" target="_blank">
+                            <span class="panel-icon">
+                                <i class="fa fa-terminal" aria-hidden="true"></i>
+                            </span>
+                            {{ final.nombre | titlecase }}
+                        </a>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </div>
+
