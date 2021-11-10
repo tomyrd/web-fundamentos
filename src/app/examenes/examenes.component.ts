@@ -32,7 +32,7 @@ export class ExamenesComponent implements OnInit {
         }`;
         parciales[i].url = this.restApi.getApiUrl() + '/parciales/' + parciales[i].name;
       }
-      this.allParciales = parciales;
+      this.allParciales = _.orderBy(parciales, 'nombre', 'desc');
       this.parciales = this.allParciales;
     });
   }
@@ -47,7 +47,7 @@ export class ExamenesComponent implements OnInit {
         }`;
         finales[i].url = this.restApi.getApiUrl() + '/finales/' + finales[i].name;
       }
-      this.allFinales = finales;
+      this.allFinales = _.orderBy(finales, 'nombre', 'desc');
       this.finales = this.allFinales;
     });
   }
