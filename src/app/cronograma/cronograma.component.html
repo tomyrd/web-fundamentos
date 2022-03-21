@@ -1,24 +1,113 @@
 <section class="section" id="cronograma">
     <p class="title">Cronograma</p>
     <div class="content is-normal">
-        <p>Atención: El siguiente cronograma es tentativo y podrá sufrir cambios.</p>
+        <p>
+          Atención: El siguiente cronograma es tentativo y podrá sufrir cambios.
+        </p>
         <p>Puede descargar la versión en pdf desde <a href="{{ cronogramaURL }}" target="_blank">acá</a></p>
     </div>
-    <div class="columns">
-        <div class="column is-8 is-offset-2"style="overflow-y: scroll; height: 60rem;">
-            <article [ngClass]="{'message is-blue': true, 'active-week': fecha >= semana.fechaInicio && fecha <= semana.fechaFin }" *ngFor="let semana of cronograma">
-                <div class="message-body py-5">
-                    <div class="columns">
-                        <div class="column is-2 has-text-centered">
-                            <h3 class="title is-3">{{ semana.numero }}</h3>
-                        </div>
-                        <div class="column is-8 pt-4">
-                            <h5 class="subtitle is-5">{{ semana.tema }}</h5>
-                            <span [ngClass]="{'tag is-rounded is-medium mr-2 mb-2 is-blue': true }" *ngFor="let hito of semana.hitos">{{ hito }}</span>
-                        </div>
+    <table class="table is-fullwidth is-bordered">
+        <thead>
+            <tr>
+                <th>Semana</th>
+                <th>Martes</th>
+                <th>Jueves</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr
+              [ngClass]="{'is-vcentered is-selected': fecha >= semana.fechaInicio && fecha < semana.fechaFin }"
+              *ngFor="let semana of cronograma"
+            >
+                <td>
+                  <div>
+                    {{ semana.numero }}
+                  </div>
+                </td>
+                <td [ngClass]="{'has-background-grey-lighter': semana.teorica.esFeriado}">
+                    <div
+                      [ngClass]="{'has-text-weight-bold': true}"
+                      *ngIf="semana.teorica.esFeriado"
+                    >
+                      <div [ngClass]="{'tag is-light mb-3': true}">
+                        {{ semana.teorica.fecha  | date: 'dd/MM' }}
+                      </div>
+                      <div>
+                        Feriado
+                      </div>
                     </div>
-                </div>
-            </article>
-        </div>
-    </div>
+                    <div *ngIf="!semana.teorica.esFeriado">
+                      <div [ngClass]="{'tag is-light mb-3': true}">
+                        {{ semana.teorica.fecha  | date: 'dd/MM' }}
+                      </div>
+                      <ul>
+                          <li *ngFor="let tema of semana.teorica.temas">
+                            {{ tema }}
+                          </li>
+                      </ul>
+                      <ul [ngClass]="{'mt-3': true}">
+                          <li
+                            [ngClass]="{
+                              'tag is-rounded is-medium mr-2 mb-2 is-link': true,
+                              'is-success': hito.tipo === 'otros',
+                              'is-link': hito.tipo === 'parcial',
+                              'is-info': hito.tipo === 'entrega-tp' ||
+                                          hito.tipo === 'presentacion-tp',
+                              'is-light': hito.tipo === 'presentacion-tp' ||
+                                            hito.tipo === 'otros'
+                            }"
+                            *ngFor="let hito of semana.teorica.hitos"
+                          >
+                            {{ hito.titulo }}
+                          </li>
+                      </ul>
+                    </div>
+                </td>
+                <td [ngClass]="{'has-background-grey-lighter': semana.practica.esFeriado}">
+                    <div
+                      [ngClass]="{'has-text-weight-bold': true}"
+                      *ngIf="semana.practica.esFeriado"
+                    >
+                      <div [ngClass]="{'tag is-light mb-3': true}">
+                        {{ semana.practica.fecha  | date: 'dd/MM' }}
+                      </div>
+                      <div>
+                        Feriado
+                      </div>
+                    </div>
+                    <div *ngIf="!semana.practica.esFeriado">
+                      <div [ngClass]="{'tag is-light mb-3': true}">
+                        {{ semana.practica.fecha  | date: 'dd/MM' }}
+                      </div>
+                      <ul>
+                          <li *ngFor="let tema of semana.practica.temas">
+                            {{ tema }}
+                          </li>
+                      </ul>
+                      <ul [ngClass]="{'mt-3': true}">
+                          <li
+                            [ngClass]="{
+                              'tag is-rounded is-medium mr-2 mb-2 is-link': true,
+                              'is-success': hito.tipo === 'otros',
+                              'is-link': hito.tipo === 'parcial',
+                              'is-info': hito.tipo === 'entrega-tp' ||
+                                          hito.tipo === 'presentacion-tp',
+                              'is-light': hito.tipo === 'presentacion-tp' ||
+                                            hito.tipo === 'otros'
+                            }"
+                            *ngFor="let hito of semana.practica.hitos"
+                          >
+                            {{ hito.titulo }}
+                          </li>
+                      </ul>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <article [ngClass]="{'message is-dark': true}">
+      <div [ngClass]="{'message-body': true}">
+        El 2do recuperatorio del parcial se tomará junto con la 1ra fecha de final (solo en la primera).
+      </div>
+    </article>
 </section>
