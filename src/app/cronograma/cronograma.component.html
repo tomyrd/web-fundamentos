@@ -24,7 +24,7 @@
                     {{ semana.numero }}
                   </div>
                 </td>
-                <td [ngClass]="{'has-background-grey-lighter': semana.teorica.esFeriado}">
+                <td [ngClass]="{'has-background-grey-lighter has-text-dark': semana.teorica.esFeriado}">
                     <div
                       [ngClass]="{'has-text-weight-bold': true}"
                       *ngIf="semana.teorica.esFeriado"
@@ -63,7 +63,7 @@
                       </ul>
                     </div>
                 </td>
-                <td [ngClass]="{'has-background-grey-lighter': semana.practica.esFeriado}">
+                <td [ngClass]="{'has-background-grey-lighter has-text-dark': semana.practica.esFeriado}">
                     <div
                       [ngClass]="{'has-text-weight-bold': true}"
                       *ngIf="semana.practica.esFeriado"
