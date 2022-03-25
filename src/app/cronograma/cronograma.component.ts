@@ -34,7 +34,8 @@ export class CronogramaComponent implements OnInit {
             'Introducción a la materia',
             'Algoritmos',
             'Variables, constantes y literales',
-            'Tipos de dato y operadores',
+            'Datos de entrada y salida',
+            'Pre y pos condiciones',
           ],
           hitos: [],
           esFeriado: false,
@@ -53,10 +54,9 @@ export class CronogramaComponent implements OnInit {
         teorica: {
           fecha: new Date(2022, 2, 29),
           temas: [
-            'Datos de entrada y salida',
-            'Pre y post condiciones',
-            'Caja negra y caja blanca',
-            'Codigicación, compilación y ejecución',
+            'Tipos de dato y operadores',
+            'Codificación, compilación y ejecución',
+            'Estructuras de control',
           ],
           hitos: [],
           esFeriado: false,
@@ -64,7 +64,7 @@ export class CronogramaComponent implements OnInit {
         practica: {
           fecha: new Date(2022, 2, 31),
           temas: [
-            'Pre y post condiciones',
+            'Pre y pos condiciones',
             'Estructuras de control',
             'Elaboración de algoritmos',
           ],
@@ -79,7 +79,7 @@ export class CronogramaComponent implements OnInit {
         teorica: {
           fecha: new Date(2022, 3, 5),
           temas: [
-            'Funciones y Procedimientos',
+            'Funciones y procedimientos',
             'Pasaje de parámetros por valor y por referencia',
           ],
           hitos: [],
@@ -88,7 +88,7 @@ export class CronogramaComponent implements OnInit {
         practica: {
           fecha: new Date(2022, 3, 7),
           temas: [
-            'Funciones y Procedimientos',
+            'Funciones y procedimientos',
             'Pasaje de parámetros por valor y por referencia',
           ],
           hitos: [
@@ -108,7 +108,7 @@ export class CronogramaComponent implements OnInit {
           fecha: new Date(2022, 3, 12),
           temas: [
             'Pasaje de parámetros por referencia',
-            'Buenas prácticasd de programación',
+            'Buenas prácticas de programación',
           ],
           hitos: [],
           esFeriado: false,
@@ -129,7 +129,6 @@ export class CronogramaComponent implements OnInit {
           temas: [
             'Bibliotecas',
             'Registros',
-            'Strings',
           ],
           hitos: [],
           esFeriado: false,
@@ -139,7 +138,6 @@ export class CronogramaComponent implements OnInit {
           temas: [
             'Bibliotecas',
             'Registros',
-            'Strings',
           ],
           hitos: [
             {
@@ -159,6 +157,7 @@ export class CronogramaComponent implements OnInit {
           temas: [
             'Vectores y matrices',
             'Búsqueda lineal',
+            'Strings',
           ],
           hitos: [],
           esFeriado: false,
@@ -168,6 +167,7 @@ export class CronogramaComponent implements OnInit {
           temas: [
             'Vectores y matrices',
             'Búsqueda lineal',
+            'Strings',
           ],
           hitos: [
             {
@@ -219,7 +219,7 @@ export class CronogramaComponent implements OnInit {
           fecha: new Date(2022, 4, 12),
           temas: [
             'Métodos de ordenamiento',
-            'Métodos de búsqueda',
+            'Inserción ordenada',
           ],
           hitos: [],
           esFeriado: false,
@@ -232,8 +232,8 @@ export class CronogramaComponent implements OnInit {
         teorica: {
           fecha: new Date(2022, 4, 17),
           temas: [
-            'Recursividad',
             'Búsqueda binaria',
+            'Recursividad',
           ],
           hitos: [],
           esFeriado: false,
@@ -241,8 +241,8 @@ export class CronogramaComponent implements OnInit {
         practica: {
           fecha: new Date(2022, 4, 19),
           temas: [
-            'Recursividad',
             'Búsqueda binaria',
+            'Recursividad',
           ],
           hitos: [
             {
@@ -318,7 +318,6 @@ export class CronogramaComponent implements OnInit {
           fecha: new Date(2022, 5, 7),
           temas: [
             'Archivos de texto',
-            'Accesso secuencial',
           ],
           hitos: [],
           esFeriado: false,
@@ -327,7 +326,6 @@ export class CronogramaComponent implements OnInit {
           fecha: new Date(2022, 5, 9),
           temas: [
             'Archivos de texto',
-            'Accesso secuencial',
           ],
           hitos: [
             {
@@ -366,7 +364,7 @@ export class CronogramaComponent implements OnInit {
         teorica: {
           fecha: new Date(2022, 5, 21),
           temas: [
-            'Ejercicios integradores',
+            'Algo1 en otro lenguaje',
           ],
           hitos: [],
           esFeriado: false,
@@ -374,7 +372,7 @@ export class CronogramaComponent implements OnInit {
         practica: {
           fecha: new Date(2022, 5, 23),
           temas: [
-            'Ejercicios integradores',
+            'Algo1 en otro lenguaje',
           ],
           hitos: [],
           esFeriado: false,
@@ -394,9 +392,7 @@ export class CronogramaComponent implements OnInit {
         },
         practica: {
           fecha: new Date(2022, 5, 30),
-          temas: [
-            'Algo1 en otro lenguaje',
-          ],
+          temas: [],
           hitos: [
             {
               titulo: 'Entrega TP3',
