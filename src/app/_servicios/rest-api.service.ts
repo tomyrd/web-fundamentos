@@ -38,8 +38,8 @@ export class RestApiService {
 		return environment.chanutron2021;
 	}
 
-	getDiscord() {
-		return "https://discord.com/channels/935239378777813083/935239379251761182";
+	getSlack() {
+		return "https://alumnos7540mendez.slack.com";
 	}
 
 	getInstagram() {

@@ -10,7 +10,7 @@ export class NavbarComponent implements OnInit {
 
   chanutron2021: string;
   rpl: string;
-  discord: string;
+  slack: string;
   canalYouTube: string;
   instagram: string;
   activeMenu = false;
@@ -23,7 +23,7 @@ export class NavbarComponent implements OnInit {
 
 		this.chanutron2021 = this.restApi.getChanutron2021();
 		this.rpl = this.restApi.getRPL();
-		this.discord = this.restApi.getDiscord();
+		this.slack = this.restApi.getSlack();
 		this.canalYouTube = this.restApi.getCanalYouTube();
 		this.instagram = this.restApi.getInstagram();
   }
