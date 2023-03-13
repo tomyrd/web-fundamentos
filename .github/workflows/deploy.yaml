@@ -7,15 +7,15 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: checkout
-        uses: actions/checkout@v3
-      - name: use node v3
-        uses: actions/setup-node@v3
-        with:
-          node-version: 16
-      - name: install dependencies
-        run: npm ci --legacy-peer-deps
-      - name: build
-        run: npm run build --- --prod
-      -name : test
-        run: npm run test -- --prod
+    - name: checkout
+      uses: actions/checkout@v3
+    - name: use node v3
+      uses: actions/setup-node@v3
+      with:
+        node-version: 16
+    - name: install dependencies
+      run: npm ci --legacy-peer-deps
+    - name: build
+      run: npm run build --- --prod
+    -name : test
+      run: npm run test -- --prod
