@@ -23,6 +23,6 @@ jobs:
       uses: peaceiris/actions-gh-pages@v3
       with:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./dist/algo1-new-page
+        publish_dir: dist/algo1-new-page
         allow_empty_commit: true
         enable_jekyll: true
