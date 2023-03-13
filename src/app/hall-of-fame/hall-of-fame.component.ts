@@ -14,12 +14,14 @@ export class HallOfFameComponent implements OnInit {
 
   ngOnInit(): void {
     this.docentes = _.chunk([
-      {name: "Mariano Mendez", url1: "assets/img/docentes/marian1.jpg", url2: "assets/img/docentes/marian2.jpg"},
-      //{name: "Charly Talavera", url1: "assets/img/docentes/charly1.jpg", url2: "assets/img/docentes/charly2.jpg"},
-      {name: "Tomi", url1: "assets/img/docentes/tomi1.jpg", url2: "assets/img/docentes/tomi2.jpg"},
-      {name: "Aníbal Lovaglio", url1: "assets/img/docentes/anibal1.jpg", url2: "assets/img/docentes/anibal2.jpg"},
-      {name: "Gabriel Pucci", url1: "assets/img/docentes/puchi1.jpg", url2: "assets/img/docentes/puchi2.jpg"},
-      {name: "Fernando Cáceres", url1: "assets/img/docentes/fer1.jpg", url2: "assets/img/docentes/fer2.jpg"},
+      { name: "Mariano", url1: "assets/img/docentes/marian1.jpg", url2: "assets/img/docentes/marian2.jpg" },
+      { name: "Berni", url1: "assets/img/docentes/berni1.jpg", url2: "assets/img/docentes/berni2.jpg" },
+      { name: "Santi", url1: "assets/img/docentes/santi1.jpg", url2: "assets/img/docentes/santi2.jpg" },
+      { name: "Delfi", url1: "assets/img/docentes/delfi1.jpg", url2: "assets/img/docentes/delfi2.jpg" },
+      { name: "Gonza", url1: "assets/img/docentes/gonza1.jpg", url2: "assets/img/docentes/gonza2.jpg" },
+      { name: "Aníbal", url1: "assets/img/docentes/anibal1.jpg", url2: "assets/img/docentes/anibal2.jpg" },
+      { name: "Pucci", url1: "assets/img/docentes/puchi1.jpg", url2: "assets/img/docentes/puchi2.jpg" },
+      { name: "Fer", url1: "assets/img/docentes/fer1.jpg", url2: "assets/img/docentes/fer2.jpg" },
     ], 5);
   }
 
