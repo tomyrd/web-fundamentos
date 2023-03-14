@@ -34,8 +34,8 @@ export class RestApiService {
 		return environment.canalYouTube;
 	}
 
-	getChanutron2021() {
-		return environment.chanutron2021;
+	getAlgotron() {
+		return environment.algotron;
 	}
 
 	getSlack() {

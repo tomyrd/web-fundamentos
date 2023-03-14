@@ -8,7 +8,7 @@ import { RestApiService } from '../_servicios/rest-api.service';
 })
 export class NavbarComponent implements OnInit {
 
-  chanutron2021: string;
+  algotron: string;
   rpl: string;
   slack: string;
   canalYouTube: string;
@@ -21,7 +21,7 @@ export class NavbarComponent implements OnInit {
 
   ngOnInit(): void {
 
-		this.chanutron2021 = this.restApi.getChanutron2021();
+		this.algotron = this.restApi.getAlgotron();
 		this.rpl = this.restApi.getRPL();
 		this.slack = this.restApi.getSlack();
 		this.canalYouTube = this.restApi.getCanalYouTube();

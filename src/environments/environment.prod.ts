@@ -5,5 +5,5 @@ export const environment = {
   cronograma: 'assets/docs/cronograma.pdf',
   regimenDeCursada: 'assets/docs/regimen_de_cursada.pdf',
   canalYouTube: 'https://www.youtube.com/channel/UCRXcp7q4qKkLvtOH7tysdgA',
-  chanutron2021: 'https://entregas.algoritmos7540mendez.com.ar',
+  algotron: 'https://algotron.com.ar',
 };
