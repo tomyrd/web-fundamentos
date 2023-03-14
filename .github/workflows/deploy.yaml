@@ -26,3 +26,4 @@ jobs:
         publish_dir: dist/algo1-new-page
         allow_empty_commit: true
         enable_jekyll: true
+        cname: algo1camejo.com.ar
