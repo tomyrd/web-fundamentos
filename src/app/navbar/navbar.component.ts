@@ -8,6 +8,7 @@ import { RestApiService } from '../_servicios/rest-api.service';
 })
 export class NavbarComponent implements OnInit {
 
+  material: string;
   algotron: string;
   rpl: string;
   slack: string;
@@ -21,6 +22,7 @@ export class NavbarComponent implements OnInit {
 
   ngOnInit(): void {
 
+		this.material = this.restApi.getMaterial();
 		this.algotron = this.restApi.getAlgotron();
 		this.rpl = this.restApi.getRPL();
 		this.slack = this.restApi.getSlack();

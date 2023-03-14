@@ -14,6 +14,14 @@ export class RestApiService {
 		return this.http.get(environment.apiUrl + '/' + tipo);
 	}
 
+	getMaterial() {
+		return environment.material;
+	}
+
+	getApuntes() {
+		return environment.apuntes;
+	}
+
 	getCronograma() {
 		return this.http.get(environment.calendarUrl + '/events?code=7540&date=2021-09-07');
 	}
