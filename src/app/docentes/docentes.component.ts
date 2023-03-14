@@ -17,6 +17,7 @@ export class DocentesComponent implements OnInit {
       { name: "Agus", url1: "assets/img/docentes/agusB1.jpg", url2: "assets/img/docentes/agusB2.jpg" },
       { name: "Agus", url1: "assets/img/docentes/agusF1.jpg", url2: "assets/img/docentes/agusF2.jpg" },
       { name: "Ampi", url1: "assets/img/docentes/ampi1.jpg", url2: "assets/img/docentes/ampi2.jpg" },
+      { name: "Ari", url1: "assets/img/docentes/ari1.jpg", url2: "assets/img/docentes/ari2.jpg" },
       { name: "Clara", url1: "assets/img/docentes/clara1.jpg", url2: "assets/img/docentes/clara2.jpg" },
       { name: "Dulci", url1: "assets/img/docentes/dulci1.jpg", url2: "assets/img/docentes/dulci2.jpg" },
       { name: "Flor", url1: "assets/img/docentes/flor1.jpg", url2: "assets/img/docentes/flor2.jpg" },
