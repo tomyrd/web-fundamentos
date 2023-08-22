@@ -198,7 +198,7 @@ export class CronogramaComponent implements OnInit {
         fechaInicio: 20230424,
         fechaFin: 20230430,
         teorica: {
-          fecha: new Date(2023, 4, 25),
+          fecha: new Date(2023, 3, 25),
           temas: [
             'Strings.',
             'GDB.'
@@ -207,7 +207,7 @@ export class CronogramaComponent implements OnInit {
           esFeriado: false,
         },
         practica: {
-          fecha: new Date(2023, 4, 30),
+          fecha: new Date(2023, 3, 27),
           temas: [
             'Strings.',
             'GDB.'
@@ -221,7 +221,7 @@ export class CronogramaComponent implements OnInit {
         fechaInicio: 20230501,
         fechaFin: 20230507,
         teorica: {
-          fecha: new Date(2023, 5, 2),
+          fecha: new Date(2023, 4, 2),
           temas: [
             'Métodos de ordenamiento.',
             'Inserción ordenada.',
@@ -230,7 +230,7 @@ export class CronogramaComponent implements OnInit {
           esFeriado: false,
         },
         practica: {
-          fecha: new Date(2023, 5, 4),
+          fecha: new Date(2023, 4, 4),
           temas: [
             'Métodos de ordenamiento.',
             'Inserción ordenada.',
@@ -244,7 +244,7 @@ export class CronogramaComponent implements OnInit {
         fechaInicio: 20230508,
         fechaFin: 20230514,
         teorica: {
-          fecha: new Date(2023, 5, 9),
+          fecha: new Date(2023, 4, 9),
           temas: [
             'Búsqueda binaria.',
             'Recursividad.',
@@ -253,7 +253,7 @@ export class CronogramaComponent implements OnInit {
           esFeriado: false,
         },
         practica: {
-          fecha: new Date(2023, 5, 11),
+          fecha: new Date(2023, 4, 11),
           temas: [
             'Búsqueda binaria.',
             'Recursividad.',
@@ -267,7 +267,7 @@ export class CronogramaComponent implements OnInit {
         fechaInicio: 20230515,
         fechaFin: 20230521,
         teorica: {
-          fecha: new Date(2023, 5, 16),
+          fecha: new Date(2023, 4, 16),
           temas: [
             'Recursividad.',
             'Unión, intersección y diferencia.',
@@ -276,7 +276,7 @@ export class CronogramaComponent implements OnInit {
           esFeriado: false,
         },
         practica: {
-          fecha: new Date(2023, 5, 18),
+          fecha: new Date(2023, 4, 18),
           temas: [
             'Recursividad.',
             'Unión, intersección y diferencia.',
@@ -295,7 +295,7 @@ export class CronogramaComponent implements OnInit {
         fechaInicio: 20230522,
         fechaFin: 20230528,
         teorica: {
-          fecha: new Date(2023, 5, 23),
+          fecha: new Date(2023, 4, 23),
           temas: [],
           hitos: [
             {
@@ -306,7 +306,7 @@ export class CronogramaComponent implements OnInit {
           esFeriado: false,
         },
         practica: {
-          fecha: new Date(2023, 5, 25),
+          fecha: new Date(2023, 4, 25),
           temas: [],
           hitos: [],
           esFeriado: true,
@@ -317,7 +317,7 @@ export class CronogramaComponent implements OnInit {
         fechaInicio: 20230529,
         fechaFin: 20230604,
         teorica: {
-          fecha: new Date(2023, 5, 30),
+          fecha: new Date(2023, 4, 30),
           temas: [],
           hitos: [
             {
@@ -328,7 +328,7 @@ export class CronogramaComponent implements OnInit {
           esFeriado: false,
         },
         practica: {
-          fecha: new Date(2023, 6, 1),
+          fecha: new Date(2023, 5, 1),
           temas: [
             'Algo1 en Python.',
           ],
@@ -350,7 +350,7 @@ export class CronogramaComponent implements OnInit {
         fechaInicio: 20230605,
         fechaFin: 20230611,
         teorica: {
-          fecha: new Date(2023, 6, 6),
+          fecha: new Date(2023, 5, 6),
           temas: [
             'Algo1 en Python.',
           ],
@@ -358,7 +358,7 @@ export class CronogramaComponent implements OnInit {
           esFeriado: false,
         },
         practica: {
-          fecha: new Date(2023, 6, 8),
+          fecha: new Date(2023, 5, 8),
           temas: [
             'Archivos CSV en Python.',
           ],
@@ -371,7 +371,7 @@ export class CronogramaComponent implements OnInit {
         fechaInicio: 20230612,
         fechaFin: 20230618,
         teorica: {
-          fecha: new Date(2023, 6, 13),
+          fecha: new Date(2023, 5, 13),
           temas: [
             'Archivos JSON en Python.',
           ],
@@ -379,7 +379,7 @@ export class CronogramaComponent implements OnInit {
           esFeriado: false,
         },
         practica: {
-          fecha: new Date(2023, 6, 15),
+          fecha: new Date(2023, 5, 15),
           temas: [],
           hitos: [
             {
@@ -399,13 +399,13 @@ export class CronogramaComponent implements OnInit {
         fechaInicio: 20230619,
         fechaFin: 20230625,
         teorica: {
-          fecha: new Date(2023, 6, 20),
+          fecha: new Date(2023, 5, 20),
           temas: [],
           hitos: [],
           esFeriado: true,
         },
         practica: {
-          fecha: new Date(2023, 6, 22),
+          fecha: new Date(2023, 5, 22),
           temas: [],
           hitos: [
             {
@@ -421,7 +421,7 @@ export class CronogramaComponent implements OnInit {
         fechaInicio: 20230626,
         fechaFin: 20230702,
         teorica: {
-          fecha: new Date(2023, 6, 27),
+          fecha: new Date(2023, 5, 27),
           temas: [],
           hitos: [
             {
@@ -432,7 +432,7 @@ export class CronogramaComponent implements OnInit {
           esFeriado: false,
         },
         practica: {
-          fecha: new Date(2023, 6, 29),
+          fecha: new Date(2023, 5, 29),
           temas: [],
           hitos: [
             {
