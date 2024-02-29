@@ -17,6 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "baseHref": "/web-fundamentos/",
             "outputPath": "dist/algo1-new-page",
             "index": "src/index.html",
             "main": "src/main.ts",
