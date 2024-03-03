@@ -1,4 +1,4 @@
-# Algo1NewPage
+# Página para Fundamentos de Programación Cátedra Mendez
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.5.
 
