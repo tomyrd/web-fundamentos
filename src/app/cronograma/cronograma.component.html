@@ -40,6 +40,9 @@
                       <div [ngClass]="{'tag is-light mb-3': true}">
                         {{ semana.teorica.fecha  | date: 'dd/MM' }}
                       </div>
+                      <div [ngClass]="{'tag mb3': true, 'is-success': semana.teorica.esVirtual, 'is-info': !semana.teorica.esVirtual}" style="margin-left: 5px;">
+                        {{ semana.teorica.esVirtual ? 'Virtual' : 'Presencial' }}
+                      </div>
                       <ul>
                           <li *ngFor="let tema of semana.teorica.temas">
                             {{ tema }}
@@ -78,6 +81,9 @@
                     <div *ngIf="!semana.practica.esFeriado">
                       <div [ngClass]="{'tag is-light mb-3': true}">
                         {{ semana.practica.fecha  | date: 'dd/MM' }}
+                      </div>
+                      <div [ngClass]="{'tag mb3': true, 'is-success': semana.practica.esVirtual, 'is-info': !semana.practica.esVirtual}" style="margin-left: 5px;">
+                        {{ semana.practica.esVirtual ? 'Virtual' : 'Presencial' }}
                       </div>
                       <ul>
                           <li *ngFor="let tema of semana.practica.temas">

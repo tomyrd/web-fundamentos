@@ -39,6 +39,7 @@ export class CronogramaComponent implements OnInit {
           ],
           hitos: [],
           esFeriado: false,
+          esVirtual: true,
         },
         practica: {
           fecha: new Date(2023, 7, 24),
@@ -50,6 +51,7 @@ export class CronogramaComponent implements OnInit {
           ],
           hitos: [],
           esFeriado: false,
+          esVirtual: false,
         },
       },
       {
@@ -63,7 +65,8 @@ export class CronogramaComponent implements OnInit {
             'Estructuras de control.',
           ],
           hitos: [],
-          esFeriado: false,
+          esFeriado: true,
+          esVirtual: true,
         },
         practica: {
           fecha: new Date(2023, 7, 31),
@@ -73,6 +76,7 @@ export class CronogramaComponent implements OnInit {
           ],
           hitos: [],
           esFeriado: false,
+          esVirtual: true,
         },
       },
       {
@@ -87,6 +91,7 @@ export class CronogramaComponent implements OnInit {
           ],
           hitos: [],
           esFeriado: false,
+          esVirtual: true,
         },
         practica: {
           fecha: new Date(2023, 8, 7),
@@ -101,6 +106,7 @@ export class CronogramaComponent implements OnInit {
             }
           ],
           esFeriado: false,
+          esVirtual: true,
         },
       },
       {
@@ -119,6 +125,7 @@ export class CronogramaComponent implements OnInit {
             }
           ],
           esFeriado: false,
+          esVirtual: true,
         },
         practica: {
           fecha: new Date(2023, 8, 14),
@@ -132,6 +139,7 @@ export class CronogramaComponent implements OnInit {
             }
           ],
           esFeriado: false,
+          esVirtual: true,
         },
       },
       {
@@ -147,6 +155,7 @@ export class CronogramaComponent implements OnInit {
           ],
           hitos: [],
           esFeriado: false,
+          esVirtual: true,
         },
         practica: {
           fecha: new Date(2023, 8, 21),
@@ -162,6 +171,7 @@ export class CronogramaComponent implements OnInit {
             },
           ],
           esFeriado: false,
+          esVirtual: true,
         },
       },
       {
@@ -176,6 +186,7 @@ export class CronogramaComponent implements OnInit {
           ],
           hitos: [],
           esFeriado: false,
+          esVirtual: true,
         },
         practica: {
           fecha: new Date(2023, 8, 28),
@@ -191,6 +202,7 @@ export class CronogramaComponent implements OnInit {
             
           ],
           esFeriado: false,
+          esVirtual: true,
         },
       },
       {
@@ -205,6 +217,7 @@ export class CronogramaComponent implements OnInit {
           ],
           hitos: [],
           esFeriado: false,
+          esVirtual: true,
         },
         practica: {
           fecha: new Date(2023, 9, 3),
@@ -214,6 +227,7 @@ export class CronogramaComponent implements OnInit {
           ],
           hitos: [],
           esFeriado: false,
+          esVirtual: true,
         },
       },
       {
@@ -228,6 +242,7 @@ export class CronogramaComponent implements OnInit {
           ],
           hitos: [],
           esFeriado: false,
+          esVirtual: true,
         },
         practica: {
           fecha: new Date(2023, 9, 14),
@@ -237,6 +252,7 @@ export class CronogramaComponent implements OnInit {
           ],
           hitos: [],
           esFeriado: false,
+          esVirtual: true,
         },
       },
       {
@@ -251,6 +267,7 @@ export class CronogramaComponent implements OnInit {
           ],
           hitos: [],
           esFeriado: false,
+          esVirtual: true,
         },
         practica: {
           fecha: new Date(2023, 9, 19),
@@ -260,6 +277,7 @@ export class CronogramaComponent implements OnInit {
           ],
           hitos: [],
           esFeriado: false,
+          esVirtual: true,
         },
       },
       {
@@ -274,6 +292,7 @@ export class CronogramaComponent implements OnInit {
           ],
           hitos: [],
           esFeriado: false,
+          esVirtual: true,
         },
         practica: {
           fecha: new Date(2023, 9, 26),
@@ -288,6 +307,7 @@ export class CronogramaComponent implements OnInit {
             },
           ],
           esFeriado: false,
+          esVirtual: true,
         },
       },
       {
@@ -304,6 +324,7 @@ export class CronogramaComponent implements OnInit {
             },
           ],
           esFeriado: false,
+          esVirtual: true,
         },
         practica: {
           fecha: new Date(2023, 10, 2),
@@ -315,6 +336,7 @@ export class CronogramaComponent implements OnInit {
             },
           ],
           esFeriado: false,
+          esVirtual: true,
         },
       },
       {
@@ -328,6 +350,7 @@ export class CronogramaComponent implements OnInit {
           ],
           hitos: [],
           esFeriado: false,
+          esVirtual: true,
         },
         practica: {
           fecha: new Date(2023, 10, 9),
@@ -345,6 +368,7 @@ export class CronogramaComponent implements OnInit {
             }
           ],
           esFeriado: false,
+          esVirtual: true,
         },
       },
       {
@@ -358,6 +382,7 @@ export class CronogramaComponent implements OnInit {
           ],
           hitos: [],
           esFeriado: false,
+          esVirtual: true,
         },
         practica: {
           fecha: new Date(2023, 10, 16),
@@ -366,6 +391,7 @@ export class CronogramaComponent implements OnInit {
           ],
           hitos: [],
           esFeriado: false,
+          esVirtual: true,
         },
       },
       {
@@ -379,6 +405,7 @@ export class CronogramaComponent implements OnInit {
           ],
           hitos: [],
           esFeriado: false,
+          esVirtual: true,
         },
         practica: {
           fecha: new Date(2023, 10, 23),
@@ -394,6 +421,7 @@ export class CronogramaComponent implements OnInit {
             }
           ],
           esFeriado: false,
+          esVirtual: true,
         },
       },
       {
@@ -407,6 +435,7 @@ export class CronogramaComponent implements OnInit {
           ],
           hitos: [],
           esFeriado: false,
+          esVirtual: true,
         },
         practica: {
           fecha: new Date(2023, 10, 30),
@@ -418,6 +447,7 @@ export class CronogramaComponent implements OnInit {
             }
           ],
           esFeriado: false,
+          esVirtual: true,
         },
       },
       {
@@ -434,6 +464,7 @@ export class CronogramaComponent implements OnInit {
             },
           ],
           esFeriado: false,
+          esVirtual: true,
         },
         practica: {
           fecha: new Date(2023, 11, 7),
@@ -449,6 +480,7 @@ export class CronogramaComponent implements OnInit {
             },
           ],
           esFeriado: false,
+          esVirtual: true,
         },
       },
     ];
