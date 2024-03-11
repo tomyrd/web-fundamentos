@@ -16,21 +16,16 @@ export class DocentesComponent implements OnInit {
     this.docentes = _.chunk([
       { name: "Agus", url1: "assets/img/docentes/agusB1.jpg", url2: "assets/img/docentes/agusB2.jpg" },
       { name: "Agus", url1: "assets/img/docentes/agusF1.jpg", url2: "assets/img/docentes/agusF2.jpg" },
-      { name: "Ampi", url1: "assets/img/docentes/ampi1.jpg", url2: "assets/img/docentes/ampi2.jpg" },
-      { name: "Ari", url1: "assets/img/docentes/ari1.jpg", url2: "assets/img/docentes/ari2.jpg" },
-      { name: "Clara", url1: "assets/img/docentes/clara1.jpg", url2: "assets/img/docentes/clara2.jpg" },
-      { name: "Dulci", url1: "assets/img/docentes/dulci1.jpg", url2: "assets/img/docentes/dulci2.jpg" },
+      { name: "Berni", url1: "assets/img/docentes/berni1.jpg", url2: "assets/img/docentes/berni2.jpg" },
+      { name: "Dani", url1: "assets/img/docentes/dani1.jpg", url2: "assets/img/docentes/dani2.jpg" },
       { name: "Flor", url1: "assets/img/docentes/flor1.jpg", url2: "assets/img/docentes/flor2.jpg" },
-      { name: "Juani", url1: "assets/img/docentes/juani1.jpg", url2: "assets/img/docentes/juani2.jpg" },
-      { name: "Manu", url1: "assets/img/docentes/manub1.jpg", url2: "assets/img/docentes/manub2.jpg" },
-      { name: "Manu", url1: "assets/img/docentes/manuc1.jpg", url2: "assets/img/docentes/manuc2.jpg" },
-      { name: "Martu", url1: "assets/img/docentes/martu1.jpg", url2: "assets/img/docentes/martu2.jpg" },
-      { name: "Nacho", url1: "assets/img/docentes/nachito1.jpg", url2: "assets/img/docentes/nachito2.jpg" },
-      { name: "Nacho", url1: "assets/img/docentes/nacho1.jpg", url2: "assets/img/docentes/nacho2.jpg" },
-      { name: "Nico", url1: "assets/img/docentes/nico1.jpg", url2: "assets/img/docentes/nico2.jpg" },
-      { name: "Sol", url1: "assets/img/docentes/sol1.jpg", url2: "assets/img/docentes/sol2.jpg" },
+      { name: "Gastón", url1: "assets/img/docentes/gaston1.jpg", url2: "assets/img/docentes/gaston2.jpg" },
+      { name: "Mariano", url1: "assets/img/docentes/mariano1.jpeg", url2: "assets/img/docentes/mariano2.jpeg" },
+      { name: "Matías", url1: "assets/img/docentes/matias1.jpeg", url2: "assets/img/docentes/matias2.jpeg" },
       { name: "Tomi", url1: "assets/img/docentes/tomi1.jpg", url2: "assets/img/docentes/tomi2.jpg" },
-      { name: "Valen", url1: "assets/img/docentes/valen1.jpg", url2: "assets/img/docentes/valen2.jpg" },
+      { name: "Tute", url1: "assets/img/docentes/tute1.jpeg", url2: "assets/img/docentes/tute2.jpeg" },
+      { name: "Valen", url1: "assets/img/docentes/valen1.jpeg", url2: "assets/img/docentes/valen2.jpeg" },
+      { name: "Yoel", url1: "assets/img/docentes/yoel1.jpeg", url2: "assets/img/docentes/yoel2.jpeg" }
     ], 5);
   }
 
