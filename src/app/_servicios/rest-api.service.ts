@@ -12,10 +12,8 @@ export class RestApiService {
 	}
 	
 	getFiles(tipo: string) {
-		var tok = 'github_pat_'
-		tok += environment.token1;
-		tok += environment.token2;
-		const headers = new HttpHeaders().set('Authorization', 'Bearer ' + tok);
+		var tok = ['github_pat_', environment.token1, environment.token2];
+		const headers = new HttpHeaders().set('Authorization', 'Bearer ' + tok.join(''));
 		return this.http.get("https://api.github.com/repos/tomyrd/web-fundamentos/contents/material/"+tipo+"?ref=main", { headers });
 	}
 
