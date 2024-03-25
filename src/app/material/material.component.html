@@ -37,8 +37,8 @@
                 </div>
                 <p class="panel-tabs">
                     <a (click)="changeCategory('')" [ngClass]="{'is-active': clasesCategory === ''}">Todas</a>
-                    <a (click)="changeCategory('clase')" [ngClass]="{'is-active': clasesCategory === 'clases' }">Clases</a>
-                    <a (click)="changeCategory('consultas')" [ngClass]="{'is-active': clasesCategory === 'consultas'}">Consultas</a>
+                    <a (click)="changeCategory('teorica')" [ngClass]="{'is-active': clasesCategory === 'teorica' }">Teórica</a>
+                    <a (click)="changeCategory('practica')" [ngClass]="{'is-active': clasesCategory === 'practica'}">Práctica</a>
                 </p>
                 <div class="pb-5">
                     <div style="height: 20rem; overflow-y: scroll;">
@@ -54,7 +54,7 @@
         </div>
         <div class="column is-one-third">
             <article class="panel">
-                <p class="panel-heading has-text-blue has-background-white">Trabajos Prácticos y Desafíos</p>
+                <p class="panel-heading has-text-blue has-background-white">Trabajos Prácticos</p>
                 <div class="panel-block">
                     <p class="control has-icons-left">
                         <input class="input" type="text" placeholder="Buscar" [(ngModel)]="tpsSearch" (ngModelChange)="filtrarTps(tpsSearch)">

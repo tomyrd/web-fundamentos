@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { environment } from '../../environments/environment';
+import { HttpHeaders } from '@angular/common/http';
 
 @Injectable({
 	providedIn: 'root'
@@ -9,9 +10,10 @@ export class RestApiService {
 
 	constructor(private http: HttpClient) {
 	}
-
+	
 	getFiles(tipo: string) {
-		return this.http.get(environment.apiUrl + '/' + tipo);
+		const headers = new HttpHeaders().set('Authorization', `Bearer ${environment.githubToken}`);
+		return this.http.get("https://api.github.com/repos/tomyrd/web-fundamentos/contents/material/"+tipo+"?ref=main", { headers });
 	}
 
 	getMaterial() {
