@@ -21,12 +21,15 @@ export class MaterialComponent implements OnInit {
   clasesCategory: string = "";
   apuntesSearch: string = "";
   tpsSearch: string = "";
+  material: string;
+
 
   constructor(
     public restApi: RestApiService
   ) { }
 
   ngOnInit(): void {
+    this.material = this.restApi.getMaterial();
     this.getApuntes();
 		this.getClases();
     this.getTps();
