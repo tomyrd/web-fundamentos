@@ -3,6 +3,7 @@ const setEnv = () => {
     const writeFile = fs.writeFile;
   // Configure Angular `environment.ts` file path
     const targetPath = './src/environments/environment.ts';
+    const targetProdPath = './src/environments/environment.prod.ts';
   // Load node modules
     const colors = require('colors');
     const appVersion = require('../../package.json').version;
@@ -33,6 +34,14 @@ const setEnv = () => {
       } else {
         console.log(colors.magenta(`Angular environment.ts file generated correctly at ${targetPath} \n`));
       }
+    });
+    writeFile(targetProdPath, envConfigFile, (err) => {
+        if (err) {
+          console.error(err);
+          throw err;
+        } else {
+          console.log(colors.magenta(`Angular environment.ts file generated correctly at ${targetPath} \n`));
+        }
     });
   };
   
