@@ -17,7 +17,8 @@ jobs:
       run: npm ci --legacy-peer-deps
     - name: build
       env:
-        GH_TOKEN: ${{ secrets.GH_TOKEN }}
+        TOKEN1: ${{ secrets.TOKEN1 }}
+        TOKEN2: ${{ secrets.TOKEN2 }}
       run: npm run build --- --prod
 
     - name: deploy

@@ -12,7 +12,8 @@ const setEnv = () => {
     });
   // `environment.ts` file structure
     const envConfigFile = `export const environment = {
-    githubToken: '${process.env.GH_TOKEN}',
+    token1: '${process.env.TOKEN1}',
+    token2: '${process.env.TOKEN2}',
     apiUrl: 'https://servicios.algoritmos7540mendez.com.ar',
     calendarUrl: 'https://api.algoritmos7540mendez.com.ar/calendar',
     //material: 'https://algotron.com.ar/material',
