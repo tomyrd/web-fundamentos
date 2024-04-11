@@ -39,7 +39,7 @@ export class MaterialComponent implements OnInit {
 		this.restApi.getFiles("apuntes").subscribe((data: any) => {
       this.apuntes = data.map((file: any) => {
         return {
-            nombre: file.name.split('.').slice(0, -1).join('.'),
+            nombre: file.name.split('.').slice(0, -1).join('_'),
             url: file.download_url
         }
       });
@@ -65,15 +65,15 @@ export class MaterialComponent implements OnInit {
 	}
 
   getTps() {
-		// this.restApi.getFiles("tps").subscribe((data: any) => {
-    //   this.tps = data.map((file: any) => {
-    //     return {
-    //       nombre: file.name,
-    //       url: file.download_url
-    //     }
-    //   });
-    //   this.allTps = this.tps;
-    // });
+		this.restApi.getFiles("tps").subscribe((data: any) => {
+      this.tps = data.map((file: any) => {
+        return {
+            nombre: file.name.split('.').slice(0, -1).join('_'),
+            url: file.download_url
+        }
+      });
+      this.allTps = this.tps;
+    });
 	}
 
   changeCategory(category: string){
