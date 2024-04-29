@@ -39,7 +39,7 @@ export class MaterialComponent implements OnInit {
 		this.restApi.getFiles("apuntes").subscribe((data: any) => {
       this.apuntes = data.map((file: any) => {
         return {
-            nombre: file.name.split('.').slice(0, -1).split("_").join(" "),
+            nombre: file.name.split("_").join(" ").split(".")[0],
             url: file.download_url
         }
       });
