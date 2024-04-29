@@ -68,7 +68,7 @@ export class MaterialComponent implements OnInit {
 		this.restApi.getFiles("tps").subscribe((data: any) => {
       this.tps = data.map((file: any) => {
         return {
-            nombre: file.name.split('.').slice(0, -1).join(' '),
+            nombre: file.name.split("_").join(" ").split(".")[0],
             url: file.download_url
         }
       });
