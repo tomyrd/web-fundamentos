@@ -50,7 +50,7 @@ export class RestApiService {
 	}
 
 	getSlack() {
-		return "https://fundamentosde-lhv7816.slack.com/";
+		return "https://fundamendez.slack.com/";
 	}
 
 	getInstagram() {
