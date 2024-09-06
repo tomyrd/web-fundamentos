@@ -29,14 +29,7 @@ export class InformacionComponent implements OnInit {
 
 		var encuestas = [
 			// { nombre: '1C 2024', url: '/assets/docs/encuestas/encuesta_2024_1C.html'},
-			// { nombre: '2C 2020', url: '/assets/docs/encuestas/encuesta_2020_2C.html'},
-			// { nombre: '1C 2020', url: '/assets/docs/encuestas/encuesta_2020_1C.html'},
-			// { nombre: '2C 2019', url: '/assets/docs/encuestas/encuesta_2019_2C.html'},
-			// { nombre: '1C 2019', url: '/assets/docs/encuestas/encuesta_2019_1C.html'},
-			// { nombre: '2C 2018', url: '/assets/docs/encuestas/encuesta_2018_2C.html'},
-			// { nombre: '1C 2018', url: '/assets/docs/encuestas/encuesta_2018_1C.html'},
-			// { nombre: '2C 2017', url: '/assets/docs/encuestas/encuesta_2017_2C.html'},
-			// { nombre: '1C 2017', url: '/assets/docs/encuestas/encuesta_2017_1C.html'},
+			// { nombre: '2C 2024', url: '/assets/docs/encuestas/encuesta_2024_2C.html'},
 		];
 		this.encuestas = encuestas;
 		this.selectedSurvey = encuestas[0].url;
