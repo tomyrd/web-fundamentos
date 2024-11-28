@@ -376,8 +376,8 @@ export class CronogramaComponent implements OnInit {
               "temas": [],
               "hitos": [
                 {
-                  "titulo":"2do Recuperatorio",
-                  "tipo":"parcial"
+                  "titulo":"Retrospectiva",
+                  "tipo":"otros"
                 }
               ],
               "esFeriado": false,
@@ -388,8 +388,8 @@ export class CronogramaComponent implements OnInit {
               "temas": [],
               "hitos": [
                 {
-                  "titulo":"Retrospectiva",
-                  "tipo":"otros"
+                  "titulo":"2do Recuperatorio",
+                  "tipo":"parcial"
                 }
               ],
               "esFeriado": false,
