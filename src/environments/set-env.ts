@@ -17,7 +17,7 @@ const setEnv = () => {
     apiUrl: 'https://servicios.algoritmos7540mendez.com.ar',
     calendarUrl: 'https://api.algoritmos7540mendez.com.ar/calendar',
     //material: 'https://algotron.com.ar/material',
-    material: 'https://docs.google.com/spreadsheets/d/1iXF9_CQvauaOzPM7F78GrTQpxcsM5ExPUPwDZllLUns/edit?usp=sharing',
+    material: 'https://docs.google.com/spreadsheets/d/1NdsaiVDjciOK13GosiEGOM7k3oinXTkOKl_Jmt4DNVI/edit?usp=sharing',
     apuntes: 'https://apuntes.algo1camejo.com.ar',
     cronograma: 'assets/docs/cronograma.pdf',
     regimenDeCursada: 'assets/docs/regimen_de_cursada.pdf',
