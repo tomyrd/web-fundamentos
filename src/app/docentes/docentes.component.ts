@@ -16,6 +16,7 @@ export class DocentesComponent implements OnInit {
     this.docentes = _.chunk([
       { name: "Agus B.", url1: "assets/img/docentes/agusB1.jpg", url2: "assets/img/docentes/agusB2.jpg" },
       { name: "Agus F.", url1: "assets/img/docentes/agusF1.jpg", url2: "assets/img/docentes/agusF2.jpg" },
+      { name: "Ani", url1: "assets/img/docentes/ani1.jpeg", url2: "assets/img/docentes/ani2.jpg" },
       { name: "Bauti", url1: "assets/img/docentes/bauti1.jpg", url2: "assets/img/docentes/bauti2.jpg" },
       { name: "Berni", url1: "assets/img/docentes/berni1.jpg", url2: "assets/img/docentes/berni2.jpg" },
       { name: "Danny", url1: "assets/img/docentes/danny1.jpg", url2: "assets/img/docentes/danny2.jpg" },
