@@ -23,6 +23,7 @@ const setEnv = () => {
     regimenDeCursada: 'assets/docs/regimen_de_cursada.pdf',
     canalYouTube: 'https://www.youtube.com/channel/UCRXcp7q4qKkLvtOH7tysdgA',
     algotron: 'https://algotron.com.ar',
+    buzonDeQuejas: 'https://docs.google.com/forms/d/e/1FAIpQLScNk-4PjhDOEC5KKiIpYg-FVf78DLZFY3hBWwn6l9Y3mi6kSQ/viewform?usp=header',
     appVersion: '${appVersion}',
     production: true,
   };

@@ -60,4 +60,8 @@ export class RestApiService {
 	getRPL() {
 		return "http://www.myrpl.ar/";
 	}
+
+	getBuzonDeQuejas() {
+		return environment.buzonDeQuejas;
+	}
 }

@@ -15,6 +15,7 @@ export class NavbarComponent implements OnInit {
   canalYouTube: string;
   instagram: string;
   activeMenu = false;
+  buzonDeQuejas: string;
 
   constructor(
     public restApi: RestApiService
@@ -28,6 +29,7 @@ export class NavbarComponent implements OnInit {
 		this.slack = this.restApi.getSlack();
 		this.canalYouTube = this.restApi.getCanalYouTube();
 		this.instagram = this.restApi.getInstagram();
+    this.buzonDeQuejas = this.restApi.getBuzonDeQuejas();
   }
 
 }
