@@ -1,14 +1,13 @@
-import { Component, OnInit } from '@angular/core';
-import { DatePipe } from '@angular/common';
-import { RestApiService } from 'src/app/_servicios/rest-api.service';
+import { Component, OnInit } from "@angular/core";
+import { DatePipe } from "@angular/common";
+import { RestApiService } from "src/app/_servicios/rest-api.service";
 
 @Component({
-  selector: 'algo1-cronograma',
-  templateUrl: './cronograma.component.html',
-  styleUrls: ['./cronograma.component.scss']
+  selector: "algo1-cronograma",
+  templateUrl: "./cronograma.component.html",
+  styleUrls: ["./cronograma.component.scss"],
 })
 export class CronogramaComponent implements OnInit {
-
   cronograma: any;
   fecha: string;
   actual = 0;
@@ -17,386 +16,417 @@ export class CronogramaComponent implements OnInit {
 
   constructor(
     public datepipe: DatePipe,
-    public restApi: RestApiService) { }
+    public restApi: RestApiService,
+  ) {}
 
   ngOnInit(): void {
     this.cronogramaURL = this.restApi.getCronogramaPdf();
 
-    this.fecha = this.datepipe.transform(new Date(), 'yyyyMMdd');
+    this.fecha = this.datepipe.transform(new Date(), "yyyyMMdd");
     this.cronograma = [
       {
-          "numero": 1,
-          "fechaInicio": "20240819",
-          "fechaFin": "20240823",
-          "teorica": {
-              "fecha": "2024-08-20",
-              "temas": ["Lenguaje C", "Variables, constantes y literales", "Tipos de dato", "Hola Mundo!", "Estructuras de Control"],
-              "hitos": [],
-              "esFeriado": false,
-              "esVirtual": true,
-          },
-          "practica": {
-              "fecha": "2024-08-22",
-              "temas": ["Compilación", "Entrada y Salida", "Variables, constantes y literales", "Tipos de dato", "Estructuras de Control"],
-              "hitos": [],
-              "esFeriado": false,
-              "esVirtual": false
-          }
+        numero: 1,
+        fechaInicio: "20250310",
+        fechaFin: "20250314",
+        teorica: {
+          fecha: "2025-03-11",
+          temas: [
+            "Lenguaje C",
+            "Variables, constantes y literales",
+            "Tipos de datos y operadores",
+            "Estructuras de control",
+            "Compilación",
+            "printf y scanf",
+          ],
+          hitos: [],
+          esFeriado: false,
+          esVirtual: false,
+        },
+        practica: {
+          fecha: "2025-03-13",
+          temas: [
+            "Funciones",
+            "Pasaje por valor y referencia",
+            "Buenas prácticas",
+          ],
+          hitos: [],
+          esFeriado: false,
+          esVirtual: false,
+        },
       },
       {
-          "numero": 2,
-          "fechaInicio": "20240826",
-          "fechaFin": "20240830",
-          "teorica": {
-              "fecha": "2024-08-27",
-              "temas": ["Funciones", "Buenas prácticas", "Pasaje por valor y por referencia"],
-              "hitos": [],
-              "esFeriado": false,
-              "esVirtual": false
-          },
-          "practica": {
-              "fecha": "2024-08-29",
-              "temas": ["Funciones", "Buenas prácticas", "Pre y post condiciones"],
-              "hitos": [
-                {
-                  "titulo":"Laboratorio",
-                  "tipo":"otros"
-                }
-              ],
-              "esFeriado": false,
-              "esVirtual": false
-          }
+        numero: 2,
+        fechaInicio: "20250317",
+        fechaFin: "20250321",
+        teorica: {
+          fecha: "2025-03-18",
+          temas: ["Vectores", "Inserción", "Eliminación", "Búsqueda lineal"],
+          hitos: [],
+          esFeriado: false,
+          esVirtual: false,
+        },
+        practica: {
+          fecha: "2025-03-20",
+          temas: [],
+          hitos: [
+            {
+              titulo: "Laboratorio",
+              tipo: "otros",
+            },
+            {
+              titulo: "Presentación TP0",
+              tipo: "presentacion-tp",
+            },
+          ],
+          esFeriado: false,
+          esVirtual: false,
+        },
       },
       {
-          "numero": 3,
-          "fechaInicio": "20240902",
-          "fechaFin": "20240906",
-          "teorica": {
-              "fecha": "2024-09-03",
-              "temas": ["Vectores", "Matrices", "Punteros"],
-              "hitos": [],
-              "esFeriado": false,
-              "esVirtual": false
-          },
-          "practica": {
-              "fecha": "2024-09-05",
-              "temas": ["Insertar, eliminar y buscar", "Vectores", "Matrices"],
-              "hitos": [
-                {
-                  "titulo":"Presentación TP0",
-                  "tipo":"presentacion-tp"
-                }
-              ],
-              "esFeriado": false,
-              "esVirtual": false
-          }
+        numero: 3,
+        fechaInicio: "20250324",
+        fechaFin: "20250328",
+        teorica: {
+          fecha: "2025-03-25",
+          temas: ["Matrices", "Punteros", "Structs"],
+          hitos: [],
+          esFeriado: false,
+          esVirtual: false,
+        },
+        practica: {
+          fecha: "2025-03-27",
+          temas: ["Matrices", "Punteros", "Structs"],
+          hitos: [
+            {
+              titulo: "Entrega TP0",
+              tipo: "entrega-tp",
+            },
+          ],
+          esFeriado: false,
+          esVirtual: false,
+        },
       },
       {
-          "numero": 4,
-          "fechaInicio": "20240909",
-          "fechaFin": "20240913",
-          "teorica": {
-              "fecha": "2024-09-10",
-              "temas": ["Bibliotecas", "Registros"],
-              "hitos": [],
-              "esFeriado": false,
-              "esVirtual": true
-          },
-          "practica": {
-              "fecha": "2024-09-12",
-              "temas": ["Bibliotecas", "Registros"],
-              "hitos": [
-                {
-                  "titulo":"Entrega TP0",
-                  "tipo":"entrega-tp"
-                },
-                {
-                  "titulo":"Presentación TP1",
-                  "tipo":"presentacion-tp"
-                },
-              ],              "esFeriado": false,
-              "esVirtual": true
-          }
+        numero: 4,
+        fechaInicio: "20250331",
+        fechaFin: "20250404",
+        teorica: {
+          fecha: "2025-04-01",
+          temas: ["Bibliotecas", "Strings"],
+          hitos: [],
+          esFeriado: false,
+          esVirtual: false,
+        },
+        practica: {
+          fecha: "2025-04-03",
+          temas: [],
+          hitos: [
+            {
+              titulo: "Laboratorio",
+              tipo: "otros",
+            },
+            {
+              titulo: "Presentación TP1",
+              tipo: "presentacion-tp",
+            },
+          ],
+          esFeriado: false,
+          esVirtual: false,
+        },
       },
       {
-          "numero": 5,
-          "fechaInicio": "20240916",
-          "fechaFin": "20240920",
-          "teorica": {
-              "fecha": "2024-09-17",
-              "temas": ["Strings", "Busqueda binaria"],
-              "hitos": [],
-              "esFeriado": false,
-              "esVirtual": false
-          },
-          "practica": {
-              "fecha": "2024-09-19",
-              "temas": ["Strings", "Bibliotecas", "Registros"],
-              "hitos": [
-                {
-                  "titulo":"Laboratorio",
-                  "tipo":"otros"
-                },
-              ],
-              "esFeriado": false,
-              "esVirtual": false
-          }
+        numero: 5,
+        fechaInicio: "20250407",
+        fechaFin: "20250411",
+        teorica: {
+          fecha: "2025-04-08",
+          temas: ["Recursividad", "Búsqueda binaria"],
+          hitos: [],
+          esFeriado: false,
+          esVirtual: true,
+        },
+        practica: {
+          fecha: "2025-04-10",
+          temas: ["Recursividad", "Búsqueda binaria"],
+          hitos: [],
+          esFeriado: false,
+          esVirtual: true,
+        },
       },
       {
-          "numero": 6,
-          "fechaInicio": "20240923",
-          "fechaFin": "20240927",
-          "teorica": {
-              "fecha": "2024-09-24",
-              "temas": ["Recursividad"],
-              "hitos": [],
-              "esFeriado": false,
-              "esVirtual": false
-          },
-          "practica": {
-              "fecha": "2024-09-26",
-              "temas": ["Recursividad", "Busqueda binaria"],
-              "hitos": [],
-              "esFeriado": false,
-              "esVirtual": false
-          }
+        numero: 6,
+        fechaInicio: "20250414",
+        fechaFin: "20250418",
+        teorica: {
+          fecha: "2025-04-15",
+          temas: ["Debugging"],
+          hitos: [],
+          esFeriado: false,
+          esVirtual: true,
+        },
+        practica: {
+          fecha: "2025-04-17",
+          temas: [],
+          hitos: [],
+          esFeriado: true,
+          esVirtual: false,
+        },
       },
       {
-          "numero": 7,
-          "fechaInicio": "20240930",
-          "fechaFin": "20241004",
-          "teorica": {
-              "fecha": "2024-10-01",
-              "temas": ["Aritmética de punteros", "Malloc y free", "Realloc"],
-              "hitos": [],
-              "esFeriado": false,
-              "esVirtual": false
-          },
-          "practica": {
-              "fecha": "2024-10-03",
-              "temas": ["Recursividad", "Memoria dinámica"],
-              "hitos": [
-                {
-                  "titulo":"Entrega TP1",
-                  "tipo":"entrega-tp"
-                },
-              ],
-              "esFeriado": false,
-              "esVirtual": false
-          }
+        numero: 7,
+        fechaInicio: "20250421",
+        fechaFin: "20250425",
+        teorica: {
+          fecha: "2025-04-22",
+          temas: [
+            "Ordenamientos",
+            "Método de burbujeo",
+            "Método de selección",
+            "Método de inserción",
+          ],
+          hitos: [],
+          esFeriado: false,
+          esVirtual: false,
+        },
+        practica: {
+          fecha: "2025-04-24",
+          temas: [
+            "Debugging",
+            "Ordenamientos",
+            "Método de burbujeo",
+            "Método de selección",
+            "Método de inserción",
+          ],
+          hitos: [],
+          esFeriado: false,
+          esVirtual: false,
+        },
       },
       {
-          "numero": 8,
-          "fechaInicio": "20241007",
-          "fechaFin": "20241011",
-          "teorica": {
-              "fecha": "2024-10-08",
-              "temas": ["Burbujeo", "Selección", "Inserción"],
-              "hitos": [],
-              "esFeriado": false,
-              "esVirtual": false
-          },
-          "practica": {
-              "fecha": "2024-10-10",
-              "temas": ["Ordenamientos", "Debugging"],
-              "hitos": [],
-              "esFeriado": false,
-              "esVirtual": false
-          }
+        numero: 8,
+        fechaInicio: "20250428",
+        fechaFin: "20250502",
+        teorica: {
+          fecha: "2025-04-29",
+          temas: [
+            "Memoria dinámica",
+            "Aritmética de punteros",
+            "malloc",
+            "free",
+          ],
+          hitos: [],
+          esFeriado: false,
+          esVirtual: false,
+        },
+        practica: {
+          fecha: "2025-05-01",
+          temas: [],
+          hitos: [
+            {
+              titulo: "Entrega TP1",
+              tipo: "entrega-tp",
+            },
+          ],
+          esFeriado: true,
+          esVirtual: false,
+        },
       },
       {
-          "numero": 9,
-          "fechaInicio": "20241014",
-          "fechaFin": "20241018",
-          "teorica": {
-              "fecha": "2024-10-15",
-              "temas": ["Mezcla", "Union", "Diferencias", "Intersección"],
-              "hitos": [],
-              "esFeriado": false,
-              "esVirtual": true
-          },
-          "practica": {
-              "fecha": "2024-10-17",
-              "temas": ["Repaso para el parcial"],
-              "hitos": [
-                {
-                  "titulo":"Reentrega TP1",
-                  "tipo":"entrega-tp"
-                }
-              ],
-              "esFeriado": false,
-              "esVirtual": true
-          }
+        numero: 9,
+        fechaInicio: "20250505",
+        fechaFin: "20250509",
+        teorica: {
+          fecha: "2025-05-06",
+          temas: ["Repaso para parcial"],
+          hitos: [],
+          esFeriado: false,
+          esVirtual: false,
+        },
+        practica: {
+          fecha: "2025-05-08",
+          temas: [],
+          hitos: [
+            {
+              titulo: "Parcial",
+              tipo: "parcial",
+            },
+          ],
+          esFeriado: false,
+          esVirtual: false,
+        },
       },
       {
-          "numero": 10,
-          "fechaInicio": "20241021",
-          "fechaFin": "20241025",
-          "teorica": {
-              "fecha": "2024-10-22",
-              "temas": [],
-              "hitos": [
-                {
-                  "titulo":"Parcial",
-                  "tipo":"parcial"
-                }
-              ],
-              "esFeriado": false,
-              "esVirtual": false
-          },
-          "practica": {
-              "fecha": "2024-10-24",
-              "temas": ["Operaciones con vectores"],
-              "hitos": [
-                {
-                  "titulo":"Presentación TP2",
-                  "tipo":"presentacion-tp"
-                }
-              ],
-              "esFeriado": false,
-              "esVirtual": true
-          }
+        numero: 10,
+        fechaInicio: "20250512",
+        fechaFin: "20250516",
+        teorica: {
+          fecha: "2025-05-13",
+          temas: ["realloc", "void *", "Valgrind", "TDAs", "Vector dinámico"],
+          hitos: [],
+          esFeriado: false,
+          esVirtual: false,
+        },
+        practica: {
+          fecha: "2025-05-15",
+          temas: ["Memoria dinámica", "TDAs", "Vector dinámico"],
+          hitos: [
+            {
+              titulo: "Reentrega TP1",
+              tipo: "entrega-tp",
+            },
+          ],
+          esFeriado: false,
+          esVirtual: false,
+        },
       },
       {
-          "numero": 11,
-          "fechaInicio": "20241028",
-          "fechaFin": "20241101",
-          "teorica": {
-              "fecha": "2024-10-29",
-              "temas": ["Valgrind", "TDAs", "Vector dinámico"],
-              "hitos": [],
-              "esFeriado": false,
-              "esVirtual": true
-          },
-          "practica": {
-              "fecha": "2024-10-31",
-              "temas": ["Vector dinámico"],
-              "hitos": [],
-              "esFeriado": false,
-              "esVirtual": true
-          }
+        numero: 11,
+        fechaInicio: "20250519",
+        fechaFin: "20250523",
+        teorica: {
+          fecha: "2025-05-20",
+          temas: ["Manejo de archivos de texto en C", "CSV"],
+          hitos: [],
+          esFeriado: false,
+          esVirtual: true,
+        },
+        practica: {
+          fecha: "2025-05-22",
+          temas: ["Archivos CSV"],
+          hitos: [
+            {
+              titulo: "Presentación TP2",
+              tipo: "presentacion-tp",
+            },
+          ],
+          esFeriado: false,
+          esVirtual: true,
+        },
       },
       {
-          "numero": 12,
-          "fechaInicio": "20241104",
-          "fechaFin": "20241108",
-          "teorica": {
-              "fecha": "2024-11-05",
-              "temas": ["Pilas", "Colas", "Listas enlazadas"],
-              "hitos": [],
-              "esFeriado": false,
-              "esVirtual": false
-          },
-          "practica": {
-              "fecha": "2024-11-07",
-              "temas": ["Listas enlazadas"],
-              "hitos": [],
-              "esFeriado": false,
-              "esVirtual": false
-          }
+        numero: 12,
+        fechaInicio: "20250526",
+        fechaFin: "20250530",
+        teorica: {
+          fecha: "2025-05-27",
+          temas: [
+            "argv y argc",
+            "Lineas de comando",
+            "Operaciones con archivos",
+          ],
+          hitos: [],
+          esFeriado: false,
+          esVirtual: false,
+        },
+        practica: {
+          fecha: "2025-05-29",
+          temas: ["Archivos", "TDAs"],
+          hitos: [],
+          esFeriado: false,
+          esVirtual: false,
+        },
       },
       {
-          "numero": 13,
-          "fechaInicio": "20241111",
-          "fechaFin": "20241115",
-          "teorica": {
-              "fecha": "2024-11-12",
-              "temas": [],
-              "hitos": [
-                {
-                  "titulo":"1er Recuperatorio",
-                  "tipo":"parcial"
-                }
-              ],
-              "esFeriado": false,
-              "esVirtual": false
-          },
-          "practica": {
-              "fecha": "2024-11-14",
-              "temas": ["Pilas", "Colas"],
-              "hitos": [
-                {
-                  "titulo":"Entrega TP2",
-                  "tipo":"entrega-tp"
-                }
-              ],
-              "esFeriado": false,
-              "esVirtual": false
-          }
+        numero: 13,
+        fechaInicio: "20250602",
+        fechaFin: "20250606",
+        teorica: {
+          fecha: "2025-06-03",
+          temas: [],
+          hitos: [
+            {
+              titulo: "1er Recuperatorio",
+              tipo: "parcial",
+            },
+          ],
+          esFeriado: false,
+          esVirtual: false,
+        },
+        practica: {
+          fecha: "2025-06-05",
+          temas: ["Operaciones con archivos"],
+          hitos: [],
+          esFeriado: false,
+          esVirtual: true,
+        },
       },
       {
-          "numero": 14,
-          "fechaInicio": "20241118",
-          "fechaFin": "20241122",
-          "teorica": {
-              "fecha": "2024-11-19",
-              "temas": ["Manejo de archivos de texto"],
-              "hitos": [],
-              "esFeriado": false,
-              "esVirtual": true
-          },
-          "practica": {
-              "fecha": "2024-11-21",
-              "temas": ["Manejo de archivos de texto"],
-              "hitos": [],
-              "esFeriado": false,
-              "esVirtual": true
-          }
+        numero: 14,
+        fechaInicio: "20250609",
+        fechaFin: "20250613",
+        teorica: {
+          fecha: "2025-06-10",
+          temas: ["TDAs", "Pila", "Cola", "Lista"],
+          hitos: [],
+          esFeriado: false,
+          esVirtual: true,
+        },
+        practica: {
+          fecha: "2025-06-12",
+          temas: ["TDAs", "Pila", "Cola", "Lista"],
+          hitos: [
+            {
+              titulo: "Entrega TP2",
+              tipo: "entrega-tp",
+            },
+          ],
+          esFeriado: false,
+          esVirtual: true,
+        },
       },
       {
-          "numero": 15,
-          "fechaInicio": "20241125",
-          "fechaFin": "20241129",
-          "teorica": {
-              "fecha": "2024-11-26",
-              "temas": ["Archivos CSV"],
-              "hitos": [],
-              "esFeriado": false,
-              "esVirtual": true
-          },
-          "practica": {
-              "fecha": "2024-11-28",
-              "temas": ["Archivos CSV"],
-              "hitos": [
-                {
-                  "titulo":"Reentrega TP2",
-                  "tipo":"entrega-tp"
-                }
-              ],
-              "esFeriado": false,
-              "esVirtual": true
-          }
+        numero: 15,
+        fechaInicio: "20250616",
+        fechaFin: "20250620",
+        teorica: {
+          fecha: "2025-06-17",
+          temas: ["Ejercicios de final"],
+          hitos: [],
+          esFeriado: false,
+          esVirtual: true,
+        },
+        practica: {
+          fecha: "2025-06-19",
+          temas: [],
+          hitos: [
+            {
+              titulo: "Laboratorio para final",
+              tipo: "otros",
+            },
+          ],
+          esFeriado: false,
+          esVirtual: false,
+        },
       },
       {
-          "numero": 16,
-          "fechaInicio": "20241202",
-          "fechaFin": "20241206",
-          "teorica": {
-              "fecha": "2024-12-03",
-              "temas": [],
-              "hitos": [
-                {
-                  "titulo":"Retrospectiva",
-                  "tipo":"otros"
-                }
-              ],
-              "esFeriado": false,
-              "esVirtual": false
-          },
-          "practica": {
-              "fecha": "2024-12-05",
-              "temas": [],
-              "hitos": [
-                {
-                  "titulo":"2do Recuperatorio",
-                  "tipo":"parcial"
-                }
-              ],
-              "esFeriado": false,
-              "esVirtual": false
-          }
-      }
-  ];
+        numero: 16,
+        fechaInicio: "20250623",
+        fechaFin: "20250627",
+        teorica: {
+          fecha: "2025-06-24",
+          temas: ["???"],
+          hitos: [],
+          esFeriado: false,
+          esVirtual: false,
+        },
+        practica: {
+          fecha: "2025-06-26",
+          temas: [],
+          hitos: [
+            {
+              titulo: "Reentrega TP2",
+              tipo: "entrega-tp",
+            },
+            {
+              titulo: "Retrospectiva",
+              tipo: "otros",
+            },
+          ],
+          esFeriado: false,
+          esVirtual: false,
+        },
+      },
+    ];
   }
 
   next(): void {
@@ -406,5 +436,4 @@ export class CronogramaComponent implements OnInit {
   previous(): void {
     if (this.actual > 0) this.actual--;
   }
-
 }
