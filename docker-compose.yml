@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  web:
+    image: web-fundamendez
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: web-fundamendez
+    working_dir: /app
+    ports:
+      - "4200:4200"
+    volumes:
+      - .:/app
+    stdin_open: true
+    tty: true
+    entrypoint: >
+      sh -c "npm install --force && npm run build && npm run start -- --host 0.0.0.0"
+
+# docker-compose up --build
