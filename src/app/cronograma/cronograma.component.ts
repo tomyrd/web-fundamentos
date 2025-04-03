@@ -151,7 +151,7 @@ export class CronogramaComponent implements OnInit {
             }
           ],
           esFeriado: false,
-          esVirtual: true,
+          esVirtual: false,
         },
       },
       {
