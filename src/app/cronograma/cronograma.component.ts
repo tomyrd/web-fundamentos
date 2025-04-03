@@ -112,26 +112,22 @@ export class CronogramaComponent implements OnInit {
         fechaFin: "20250404",
         teorica: {
           fecha: "2025-04-01",
-          temas: ["Bibliotecas", "Strings"],
+          temas: ["Recursividad", "Bibliotecas"],
           hitos: [],
           esFeriado: false,
           esVirtual: false,
         },
         practica: {
           fecha: "2025-04-03",
-          temas: [],
+          temas: ["Recursividad", "Bibliotecas"],
           hitos: [
-            {
-              titulo: "Laboratorio",
-              tipo: "otros",
-            },
             {
               titulo: "Presentación TP1",
               tipo: "presentacion-tp",
             },
           ],
           esFeriado: false,
-          esVirtual: false,
+          esVirtual: true,
         },
       },
       {
@@ -140,15 +136,20 @@ export class CronogramaComponent implements OnInit {
         fechaFin: "20250411",
         teorica: {
           fecha: "2025-04-08",
-          temas: ["Recursividad", "Búsqueda binaria"],
+          temas: ["Strings", "Búsqueda binaria"],
           hitos: [],
           esFeriado: false,
           esVirtual: true,
         },
         practica: {
           fecha: "2025-04-10",
-          temas: ["Recursividad", "Búsqueda binaria"],
-          hitos: [],
+          temas: ["Strings", "Búsqueda binaria"],
+          hitos: [
+            {
+              titulo: "Laboratorio",
+              tipo: "otros",
+            }
+          ],
           esFeriado: false,
           esVirtual: true,
         },
