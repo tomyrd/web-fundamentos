@@ -28,6 +28,7 @@ export class InformacionComponent implements OnInit {
 		this.regimenCursada = this.restApi.getRegimenPdf();
 
 		var encuestas = [
+			{ nombre: '1C 2025', url: '/assets/docs/encuestas/encuesta_2025_1C.html'},
 			{ nombre: '2C 2024', url: '/assets/docs/encuestas/encuesta_2024_2C.html'},
 			{ nombre: '1C 2024', url: '/assets/docs/encuestas/encuesta_2024_1C.html'},
 		];
