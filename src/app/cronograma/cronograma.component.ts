@@ -60,7 +60,7 @@ export class CronogramaComponent implements OnInit {
         fechaFin: "20250831",
         teorica: {
           fecha: "2025-08-26",
-          temas: ["Vectores", "Inserción", "Eliminación", "Búsqueda lineal"],
+          temas: ["Buenas Prácticas", "Vectores", "Inserción", "Eliminación", "Búsqueda lineal"],
           hitos: [],
           esFeriado: false,
           esVirtual: false,
