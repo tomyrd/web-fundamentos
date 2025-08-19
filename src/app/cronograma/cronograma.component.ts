@@ -148,12 +148,7 @@ export class CronogramaComponent implements OnInit {
         practica: {
           fecha: "2025-09-18",
           temas: ["Recursividad", "Búsqueda binaria"],
-          hitos: [
-            {
-              titulo: "Laboratorio",
-              tipo: "otros",
-            }
-          ],
+          hitos: [],
           esFeriado: false,
           esVirtual: true,
         },
