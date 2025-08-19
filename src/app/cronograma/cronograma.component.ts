@@ -26,10 +26,10 @@ export class CronogramaComponent implements OnInit {
     this.cronograma = [
       {
         numero: 1,
-        fechaInicio: "20250310",
-        fechaFin: "20250314",
+        fechaInicio: "20250818",
+        fechaFin: "20250824",
         teorica: {
-          fecha: "2025-03-11",
+          fecha: "2025-08-19",
           temas: [
             "Lenguaje C",
             "Variables, constantes y literales",
@@ -40,10 +40,10 @@ export class CronogramaComponent implements OnInit {
           ],
           hitos: [],
           esFeriado: false,
-          esVirtual: false,
+          esVirtual: true,
         },
         practica: {
-          fecha: "2025-03-13",
+          fecha: "2025-08-21",
           temas: [
             "Funciones",
             "Pasaje por valor y referencia",
@@ -56,17 +56,17 @@ export class CronogramaComponent implements OnInit {
       },
       {
         numero: 2,
-        fechaInicio: "20250317",
-        fechaFin: "20250321",
+        fechaInicio: "20250825",
+        fechaFin: "20250831",
         teorica: {
-          fecha: "2025-03-18",
+          fecha: "2025-08-26",
           temas: ["Vectores", "Inserción", "Eliminación", "Búsqueda lineal"],
           hitos: [],
           esFeriado: false,
           esVirtual: false,
         },
         practica: {
-          fecha: "2025-03-20",
+          fecha: "2025-08-28",
           temas: [],
           hitos: [
             {
@@ -84,17 +84,17 @@ export class CronogramaComponent implements OnInit {
       },
       {
         numero: 3,
-        fechaInicio: "20250324",
-        fechaFin: "20250328",
+        fechaInicio: "20250901",
+        fechaFin: "20250907",
         teorica: {
-          fecha: "2025-03-25",
+          fecha: "2025-09-02",
           temas: ["Matrices", "Punteros", "Structs"],
           hitos: [],
           esFeriado: false,
           esVirtual: false,
         },
         practica: {
-          fecha: "2025-03-27",
+          fecha: "2025-09-04",
           temas: ["Matrices", "Punteros", "Structs"],
           hitos: [
             {
@@ -108,42 +108,46 @@ export class CronogramaComponent implements OnInit {
       },
       {
         numero: 4,
-        fechaInicio: "20250331",
-        fechaFin: "20250404",
+        fechaInicio: "20250908",
+        fechaFin: "20250914",
         teorica: {
-          fecha: "2025-04-01",
-          temas: ["Recursividad", "Bibliotecas"],
+          fecha: "2025-09-09",
+          temas: ["Bibliotecas", "Strings"],
           hitos: [],
           esFeriado: false,
           esVirtual: false,
         },
         practica: {
-          fecha: "2025-04-03",
-          temas: ["Recursividad", "Bibliotecas"],
+          fecha: "2025-09-11",
+          temas: [],
           hitos: [
+            {
+              titulo: "Laboratorio",
+              tipo: "otros",
+            },
             {
               titulo: "Presentación TP1",
               tipo: "presentacion-tp",
             },
           ],
           esFeriado: false,
-          esVirtual: true,
+          esVirtual: false,
         },
       },
       {
         numero: 5,
-        fechaInicio: "20250407",
-        fechaFin: "20250411",
+        fechaInicio: "20250915",
+        fechaFin: "20250921",
         teorica: {
-          fecha: "2025-04-08",
-          temas: ["Strings", "Búsqueda binaria"],
+          fecha: "2025-09-16",
+          temas: ["Recursividad", "Búsqueda binaria"],
           hitos: [],
           esFeriado: false,
           esVirtual: true,
         },
         practica: {
-          fecha: "2025-04-10",
-          temas: ["Strings", "Búsqueda binaria"],
+          fecha: "2025-09-18",
+          temas: ["Recursividad", "Búsqueda binaria"],
           hitos: [
             {
               titulo: "Laboratorio",
@@ -151,64 +155,34 @@ export class CronogramaComponent implements OnInit {
             }
           ],
           esFeriado: false,
-          esVirtual: false,
+          esVirtual: true,
         },
       },
       {
         numero: 6,
-        fechaInicio: "20250414",
-        fechaFin: "20250418",
+        fechaInicio: "20250922",
+        fechaFin: "20250928",
         teorica: {
-          fecha: "2025-04-15",
+          fecha: "2025-09-23",
           temas: ["Debugging"],
           hitos: [],
           esFeriado: false,
           esVirtual: true,
         },
         practica: {
-          fecha: "2025-04-17",
-          temas: [],
+          fecha: "2025-09-25",
+          temas: ["Recursividad 2.0", "Debugging"],
           hitos: [],
-          esFeriado: true,
-          esVirtual: false,
+          esFeriado: false,
+          esVirtual: true,
         },
       },
       {
         numero: 7,
-        fechaInicio: "20250421",
-        fechaFin: "20250425",
+        fechaInicio: "20250929",
+        fechaFin: "20251005",
         teorica: {
-          fecha: "2025-04-22",
-          temas: [
-            "Ordenamientos",
-            "Método de burbujeo",
-            "Método de selección",
-            "Método de inserción",
-          ],
-          hitos: [],
-          esFeriado: false,
-          esVirtual: false,
-        },
-        practica: {
-          fecha: "2025-04-24",
-          temas: [
-            "Debugging",
-            "Ordenamientos",
-            "Método de burbujeo",
-            "Método de selección",
-            "Método de inserción",
-          ],
-          hitos: [],
-          esFeriado: false,
-          esVirtual: false,
-        },
-      },
-      {
-        numero: 8,
-        fechaInicio: "20250428",
-        fechaFin: "20250502",
-        teorica: {
-          fecha: "2025-04-29",
+          fecha: "2025-09-30",
           temas: [
             "Memoria dinámica",
             "Aritmética de punteros",
@@ -220,31 +194,64 @@ export class CronogramaComponent implements OnInit {
           esVirtual: false,
         },
         practica: {
-          fecha: "2025-05-01",
-          temas: [],
+          fecha: "2025-10-02",
+          temas: [
+            "Memoria dinámica",
+            "Aritmética de punteros",
+            "malloc",
+            "free",
+          ],
+          hitos: [],
+          esFeriado: false,
+          esVirtual: false,
+        },
+      },
+      {
+        numero: 8,
+        fechaInicio: "20251006",
+        fechaFin: "20251012",
+        teorica: {
+          fecha: "2025-10-07",
+          temas: [
+            "Ordenamientos",
+            "Método de burbujeo",
+            "Método de selección",
+            "Método de inserción",
+          ],
+          hitos: [],
+          esFeriado: false,
+          esVirtual: false,
+        },
+        practica: {
+          fecha: "2025-10-09",
+          temas: ["Repaso para el parcial"],
           hitos: [
+            {
+              titulo: "Laboratorio",
+              tipo: "otros",
+            },
             {
               titulo: "Entrega TP1",
               tipo: "entrega-tp",
             },
           ],
-          esFeriado: true,
+          esFeriado: false,
           esVirtual: false,
         },
       },
       {
         numero: 9,
-        fechaInicio: "20250505",
-        fechaFin: "20250509",
+        fechaInicio: "20251013",
+        fechaFin: "20251019",
         teorica: {
-          fecha: "2025-05-06",
+          fecha: "2025-10-14",
           temas: ["Repaso para parcial"],
           hitos: [],
           esFeriado: false,
           esVirtual: false,
         },
         practica: {
-          fecha: "2025-05-08",
+          fecha: "2025-10-16",
           temas: [],
           hitos: [
             {
@@ -258,17 +265,17 @@ export class CronogramaComponent implements OnInit {
       },
       {
         numero: 10,
-        fechaInicio: "20250512",
-        fechaFin: "20250516",
+        fechaInicio: "20251020",
+        fechaFin: "20251026",
         teorica: {
-          fecha: "2025-05-13",
+          fecha: "2025-10-21",
           temas: ["realloc", "void *", "Valgrind", "TDAs", "Vector dinámico"],
           hitos: [],
           esFeriado: false,
           esVirtual: false,
         },
         practica: {
-          fecha: "2025-05-15",
+          fecha: "2025-10-23",
           temas: ["Memoria dinámica", "TDAs", "Vector dinámico"],
           hitos: [
             {
@@ -282,17 +289,17 @@ export class CronogramaComponent implements OnInit {
       },
       {
         numero: 11,
-        fechaInicio: "20250519",
-        fechaFin: "20250523",
+        fechaInicio: "20251027",
+        fechaFin: "20251102",
         teorica: {
-          fecha: "2025-05-20",
+          fecha: "2025-10-28",
           temas: ["Manejo de archivos de texto en C", "CSV"],
           hitos: [],
           esFeriado: false,
           esVirtual: true,
         },
         practica: {
-          fecha: "2025-05-22",
+          fecha: "2025-10-30",
           temas: ["Archivos CSV"],
           hitos: [
             {
@@ -306,21 +313,24 @@ export class CronogramaComponent implements OnInit {
       },
       {
         numero: 12,
-        fechaInicio: "20250526",
-        fechaFin: "20250530",
+        fechaInicio: "20251103",
+        fechaFin: "20251109",
         teorica: {
-          fecha: "2025-05-27",
+          fecha: "2025-11-04",
           temas: [
-            "argv y argc",
             "Lineas de comando",
             "Operaciones con archivos",
+            "Mezcla",
+            "Unión",
+            "Intersección",
+            "Diferencias"
           ],
           hitos: [],
           esFeriado: false,
           esVirtual: false,
         },
         practica: {
-          fecha: "2025-05-29",
+          fecha: "2025-11-06",
           temas: ["Archivos", "TDAs"],
           hitos: [],
           esFeriado: false,
@@ -329,10 +339,10 @@ export class CronogramaComponent implements OnInit {
       },
       {
         numero: 13,
-        fechaInicio: "20250602",
-        fechaFin: "20250606",
+        fechaInicio: "20251110",
+        fechaFin: "20251116",
         teorica: {
-          fecha: "2025-06-03",
+          fecha: "2025-11-11",
           temas: [],
           hitos: [
             {
@@ -344,8 +354,14 @@ export class CronogramaComponent implements OnInit {
           esVirtual: false,
         },
         practica: {
-          fecha: "2025-06-05",
-          temas: ["Operaciones con archivos"],
+          fecha: "2025-11-13",
+          temas: [
+            "Operaciones con archivos",
+            "Mezcla",
+            "Unión",
+            "Intersección",
+            "Diferencias"
+          ],
           hitos: [],
           esFeriado: false,
           esVirtual: true,
@@ -353,18 +369,18 @@ export class CronogramaComponent implements OnInit {
       },
       {
         numero: 14,
-        fechaInicio: "20250609",
-        fechaFin: "20250613",
+        fechaInicio: "20251117",
+        fechaFin: "20251123",
         teorica: {
-          fecha: "2025-06-10",
-          temas: ["TDAs", "Pila", "Cola", "Lista"],
+          fecha: "2025-11-18",
+          temas: ["TDAs", "Pila", "Cola", "Lista enlazada"],
           hitos: [],
           esFeriado: false,
           esVirtual: true,
         },
         practica: {
-          fecha: "2025-06-12",
-          temas: ["TDAs", "Pila", "Cola", "Lista"],
+          fecha: "2025-11-20",
+          temas: ["TDAs", "Pila", "Cola", "Lista enlazada"],
           hitos: [
             {
               titulo: "Entrega TP2",
@@ -377,17 +393,17 @@ export class CronogramaComponent implements OnInit {
       },
       {
         numero: 15,
-        fechaInicio: "20250616",
-        fechaFin: "20250620",
+        fechaInicio: "20251124",
+        fechaFin: "20251130",
         teorica: {
-          fecha: "2025-06-17",
+          fecha: "2025-11-25",
           temas: ["Ejercicios de final"],
           hitos: [],
           esFeriado: false,
           esVirtual: true,
         },
         practica: {
-          fecha: "2025-06-19",
+          fecha: "2025-11-27",
           temas: [],
           hitos: [
             {
@@ -401,17 +417,17 @@ export class CronogramaComponent implements OnInit {
       },
       {
         numero: 16,
-        fechaInicio: "20250623",
-        fechaFin: "20250627",
+        fechaInicio: "20251201",
+        fechaFin: "20251207",
         teorica: {
-          fecha: "2025-06-24",
+          fecha: "2025-12-02",
           temas: ["???"],
           hitos: [],
           esFeriado: false,
           esVirtual: false,
         },
         practica: {
-          fecha: "2025-06-26",
+          fecha: "2025-12-04",
           temas: [],
           hitos: [
             {
